@@ -26,7 +26,7 @@ python pacman.py -p MyPacmanAgent
 #### Files you might want to look at
 
 * `pacman.py`, the main file that runs games. This file also describes the new capture the flag GameState type and rules.
-* `leaderboard.py, the file that runs all levels multiple times to compute the final leaderboard score for your agent.---------------------------------------
+* `leaderboard.py, the file that runs all levels multiple times to compute the final leaderboard score for your agent.
 
 #### Supporting files
 
