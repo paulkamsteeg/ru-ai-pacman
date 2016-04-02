@@ -305,13 +305,13 @@ problems, for your reference:
     corresponds to searching for a path through all four corners of
     a maze. (next week)
 
- - `FoodSearchProblem (searchAgents.py)` 
+- `FoodSearchProblem (searchAgents.py)` 
 
 	A specific type of SearchProblem that you will be working with ---
     it corresponds to searching for a way to eat all the pellets in
     a maze. (next week)
 
- - Search Function 
+- Search Function 
 
 	A search function is a function which takes an instance of
     SearchProblem as a parameter, runs some algorithm, and returns a
