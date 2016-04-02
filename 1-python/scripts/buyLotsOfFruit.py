@@ -9,10 +9,9 @@ def buyLotsOfFruit(orderList):
         orderList: List of (fruit, numPounds) tuples
             
     Returns cost of order
-    """ 
-    totalCost = 0.0             
-    "*** YOUR CODE HERE ***"
-    return totalCost
+    """          
+	
+    " YOUR CODE HERE "
 
 orderList = [ ('apples', 2.0), ('pears', 3.0), ('limes', 4.0) ]
 print('Cost of', orderList, 'is', buyLotsOfFruit(orderList))

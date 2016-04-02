@@ -1,6 +1,5 @@
 # Week 1: Python Tutorial
 
-
 ### Table of Contents
 
 * [Introduction](#introduction)

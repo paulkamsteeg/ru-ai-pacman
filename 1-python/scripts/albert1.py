@@ -31,7 +31,7 @@ def distance(xy1, xy2):
     return math.sqrt(pow(xy1[0] - xy2[0], 2) + pow(xy1[1] - xy2[1], 2))
 
 '''
-Returns the distance to the Albert Heijn in 'ahs' that is closest to 'pos'
+Returns the distance to the Albert Heijn in 'ahs' that is closest to 'tk'
 '''
 def closestAHDistance(tk, ahs):
     tkpos = tk.getPosition()
