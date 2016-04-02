@@ -3,5 +3,5 @@
 
 REPO="https://github.com/MareinK/ru-ai-pacman.git"
 
-echo "Attempting to push to public repository..."
-git push $REPO
+echo "Attempting to push public branch to public repository..."
+git push $REPO public:master
