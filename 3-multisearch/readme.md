@@ -1,4 +1,4 @@
-# Topic 3: Multi-goal search in Pacman
+## Topic 3: Multi-goal search in Pacman
 
 ### Introduction
 

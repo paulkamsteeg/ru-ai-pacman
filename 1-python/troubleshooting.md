@@ -1,4 +1,4 @@
-### Troubleshooting
+## Troubleshooting
 
 These are some problems (and their solutions) that new python learners
 commonly encounter.

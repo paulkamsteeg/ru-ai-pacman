@@ -1,4 +1,4 @@
-# Topic 2: Single agent search in Pacman
+## Topic 2: Single agent search in Pacman
 
 ### Introduction
 

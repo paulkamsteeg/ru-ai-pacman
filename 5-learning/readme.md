@@ -1,4 +1,4 @@
-# Topic 5: Machine Learning Pacman
+## Topic 5: Machine Learning Pacman
 
 ### Introduction
 

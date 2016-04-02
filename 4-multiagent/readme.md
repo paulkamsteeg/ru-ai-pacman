@@ -1,4 +1,4 @@
-# Topic 4: Multi-Agent Pacman
+## Topic 4: Multi-Agent Pacman
 
 ### Introduction
 

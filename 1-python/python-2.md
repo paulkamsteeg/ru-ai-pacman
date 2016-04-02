@@ -1,4 +1,4 @@
-# Topic 1 part 2: Object orientation, PyCharm and debugging
+## Topic 1 part 2: Object orientation, PyCharm and debugging
 
 
 ### Introduction
