@@ -29,7 +29,6 @@ For this topic, you have to submit answers for problems 1 (`smartShop.py`) and 2
         -   [Breakpoints](#breakpoints)
         -   [Stepping](#stepping)
         -   [End boss](#end-boss)
-    -   [Run configuration arguments](#run-configuration-arguments)
 -	[Problem 3](#problem-3-for-submission)
 
 ### Classes and Objects in Python
@@ -391,14 +390,6 @@ ahPositions = [ah.getPosition() for ah in ahs]
 ```
 
 Now, our code runs just fine. The output should be 5.385164807134504 (the closest AH is about 5.39 units from the TK).
-
-#### Run configuration arguments
-
-We might now want to restart debug mode to start the process over, because who knows, maybe we missed something. This means we have to hit the debug button again, and then need to copy-paste the command-line-arguments (```-p ReflexAgent -l testClassic```) into PyCharm again.
-
-There is an easier, faster way to do this. We can tell PyCharm to always run our program with these arguments. To do this, go to the menu at the top; ```Run -> Edit Configurations...```. The settings for the current default configuration (which is run when you click the green arrow) will be shown.
-
-In the 'Script parameters' field, enter the arguments. Now, each time you hit the green arrow button, or the debug button, the arguments will automatically be entered. Don't forget to change the arguments when you get to another part of the assignment!
 
 ### Problem 3 (for submission)
 
