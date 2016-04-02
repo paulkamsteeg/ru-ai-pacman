@@ -7,7 +7,7 @@ This tutorial goes into some more detail about working with Python, in particula
 
 #### Assignment submissions
 
-For this topic, you have to submit answers for problems 1 (`smartShop.py`) and 2 (`albert2.py`).
+For this topic, you have to submit answers for assignments 1 (`smartShop.py`) and 2 (`albert2.py`).
 
 ### Table of Contents
 
@@ -16,7 +16,7 @@ For this topic, you have to submit answers for problems 1 (`smartShop.py`) and 2
     -   [Defining Classes](#defining-classes)
     -   [Making and Using Objects](#making-and-using-objects)
     -   [Static vs Instance Variables](#static-vs-instance-variables)
--	[Problem 2](#problem-2-for-submission)
+-	[Assignment 2](#assignment-2-for-submission)
 -   [Using PyCharm for Debugging](#using-pycharm-for-debugging)
     -   [Clicking the stacktrace](#clicking-the-stacktrace)
     -   [Finding definitions by Ctrl-click](#finding-definitions-by-ctrl-click)
@@ -29,7 +29,7 @@ For this topic, you have to submit answers for problems 1 (`smartShop.py`) and 2
         -   [Breakpoints](#breakpoints)
         -   [Stepping](#stepping)
         -   [End boss](#end-boss)
--	[Problem 3](#problem-3-for-submission)
+-	[Assignment 3](#assignment-3-for-submission)
 
 ### Classes and Objects in Python
 
@@ -122,7 +122,7 @@ The following example illustrates how to static and instance variables work in P
 
 In the code above, `age` is an instance variable and `population` is a static variable. The variable `population` is shared by all instances of the `Person` class whereas each instance has its own `age` variable.
 
-### Problem 2 (for submission)
+### Assignment 2 (for submission)
 
 Use your solution to Problem 1 to complete the function `getPriceOfOrder` in `shop.py`. Then complete the function `shopSmart(orders,shops)` in `shopSmart.py`, which takes an `orderList` (like the kind passed to `FruitShop.getPriceOfOrder`) and a list of `FruitShop`s and returns the `FruitShop` where your order costs the least amount in total.
 
@@ -391,9 +391,9 @@ ahPositions = [ah.getPosition() for ah in ahs]
 
 Now, our code runs just fine. The output should be 5.385164807134504 (the closest AH is about 5.39 units from the TK).
 
-### Problem 3 (for submission)
+### Assignment 3 (for submission)
 
-The file `albert2.py` contains a different piece of code with an error. Running the code as-is results in a stacktrace. It is up to you to use the debugging features discussed above to find the error in the code and fix it, so that the desired result is given. You should upload the corrected `albert2.py` file as the solution to this problem.
+The file `albert2.py` contains a different piece of code with an error. Running the code as-is results in a stacktrace. It is up to you to use the debugging features discussed above to find the error in the code and fix it, so that the desired result is given. You should upload the corrected `albert2.py` file as the solution to this assignment.
 
 The program presented in the file also uses the Albert Heijn class, but for a different purpose. Namely, it tries to find the path along all of the Albert Heijns with the minimum total distance. The start of the path can be any of the Albert Heijns.
 
@@ -418,4 +418,3 @@ Try to make use of the techniques discussed earlier in this assignment. At the v
 We hope that the techniques described in this tutorial will be useful in the coming projects. Debug mode is a powerful tool, allowing you to much more easily spot problems and errors in your code.
 
 There are a lot of features of debug mode that we haven't discussed, such as the ability to 'watch' variables and methods and change the values of variables on-the-fly. If you want to learn more about debugging techniques and how to use them in PyCharm, you could [look here](http://www.jetbrains.com/pycharm/webhelp/debugging.html)
-You are to hand in your solution to this problem as part of the homework. Good luck!

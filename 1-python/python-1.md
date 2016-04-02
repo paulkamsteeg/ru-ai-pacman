@@ -18,7 +18,7 @@
 * [Writing Scripts](#writing-scripts)
   * [Beware of Indentation](#beware-of-indentation)
   * [Writing Functions](#writing-functions)
-* [Problem 1](#problem-1-for-submission)
+* [Assignment 1](#assignment-1-for-submission)
 
 ### Introduction
 ---
@@ -597,7 +597,7 @@ buyFruit('coconuts',2)
 
 Save this script as a file and run it. Look at the output and try to understand it.
 
-### Problem 1 (for submission)
+### Assignment 1 (for submission)
 
 Complete the `buyLotsOfFruit(orderList)` function in
 `buyLotsOfFruit.py` which takes a list of `(fruit, weightInPounds)` tuples and returns the cost of the given list.

@@ -18,7 +18,7 @@ assignment, and some of which you can ignore.
 #### Files you'll edit and submit
 
 * `search.py` where all of your search algorithms will reside.
-* `searchAgents.py`where all of your search-based agents will reside.
+* `searchAgents.py` where all of your search-based agents will reside.
 
 #### Files you might want to look at
 
@@ -121,7 +121,7 @@ be of this form to receive full credit).
 *Hint:* Make sure to check out the `Stack`, `Queue` and
 `PriorityQueue` types provided to you in `util.py`!
 
-### Problem 1 (for submission)
+### Assignment 1 (for submission)
 
 Implement the depth-first search (DFS) algorithm in
 the `depthFirstSearch` function in `search.py`. To
@@ -149,7 +149,7 @@ the order provided by `getSuccessor`s; you might get 244 if you push them
 in the reverse order). Is this a least cost solution? If not, think
 about what depth-first search is doing wrong.
 
-### Problem 2 (for submission)
+### Assignment 2 (for submission)
 
 Implement the breadth-first search (BFS) algorithm in
 the `breadthFirstSearch` function in `search.py`.
@@ -202,7 +202,7 @@ paths. For example, we can charge more for dangerous steps in
 ghost-ridden areas or less for steps in food-rich areas, and a rational
 Pacman agent should adjust its behavior in response.
 
-### Problem 3 (for submission)
+### Assignment 3 (for submission)
 
 Implement the uniform-cost graph search algorithm in
 the `uniformCostSearch` function in `search.py`. We
@@ -224,7 +224,7 @@ respectively, due to their exponential cost functions (see
 `searchAgents.py` for details).
 
 
-### Problem 4 (for submission)
+### Assignment 4 (for submission)
 
 Implement A\* graph search in the empty function
 `aStarSearch` in `search.py`. A\* takes a heuristic
@@ -268,7 +268,7 @@ of problem abstraction, which is commonly used to speed up search - in
 particular in computer games, where the graph of cross-roads and moves
 between them is called the *waypoint graph*.
 
-### Bonus problem (for submission) 
+### Bonus assignment (for submission) 
 
 Implement the missing code in the
 `CrossroadSearchAgent` in `searchAgents.py`, so that
