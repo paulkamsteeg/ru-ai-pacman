@@ -11,41 +11,26 @@ For this topic, you have to submit answers for problems 1 (`smartShop.py`) and 2
 
 ### Table of Contents
 
--   [Classes and Objects in Python](#Classes%20and%20Objects%20in%20Python)
-
-    -   [Object Orientation Basics](#Object%20Orientation%20Basics)
-
-    -   [Defining Classes](#Defining%20Classes)
-
-    -   [Making and Using Objects](#Making%20and%20Using%20Objects)
-
-    -   [Static vs Instance Variables](#Static%20vs%20Instance%20Vars)
-
--   [Using PyCharm for Debugging](#Using%20PyCharm%20for%20Debugging)
-
-    -   [Clicking the stacktrace](#Clicking%20the%20stacktrace)
-
-    -   [Finding definitions by Ctrl-click](#Finding%20definitions%20by%20Ctrl-click)
-
-    -   [Using Google effectively](#Using%20Google%20effectively)
-
-    -   [Using print statements](#Using%20print%20statements)
-
-    -   [Using pyCharm's Debug mode](#Using%20pyCharm's%20Debug%20mode)
-
-        -   [Getting ready](#Getting%20ready)
-
-        -   [The Debug interface](#The%20Debug%20interface)
-
-        -   [Mouse-over](#Mouse-over)
-
-        -   [Breakpoints](#Breakpoints)
-
-        -   [Stepping](#Stepping)
-
-        -   [End boss](#End%20boss)
-
-    -   [Run configuration arguments](#Run%20configuration%20arguments)
+-   [Classes and Objects in Python](#classes-and-objects-in-python)
+    -   [Object Orientation Basics](#object-orientation-basics)
+    -   [Defining Classes](#defining-classes)
+    -   [Making and Using Objects](#making-and-using-objects)
+    -   [Static vs Instance Variables](#static-vs-instance-variables)
+-	[Problem 2 (for submission)](#problem-2-for-submission)
+-   [Using PyCharm for Debugging](#using-pycharm-for-debugging)
+    -   [Clicking the stacktrace](#clicking-the-stacktrace)
+    -   [Finding definitions by Ctrl-click](#finding-definitions-by-ctrl-click)
+    -   [Using Google effectively](#using-google-effectively)
+    -   [Using `print` statements](#using-print-statements)
+    -   [Using PyCharm's Debug mode](#using-pycharms-debug-mode)
+        -   [Getting ready](#getting-ready)
+        -   [The Debug interface](#the-debug-interface)
+        -   [Mouse-over](#mouse-over)
+        -   [Breakpoints](#breakpoints)
+        -   [Stepping](#stepping)
+        -   [End boss](#end-boss)
+    -   [Run configuration arguments](#run-configuration-arguments)
+-	[Problem 3 (for submission)](#problem-3-for-submission)
 
 ### Classes and Objects in Python
 
@@ -138,7 +123,9 @@ The following example illustrates how to static and instance variables work in P
 
 In the code above, `age` is an instance variable and `population` is a static variable. The variable `population` is shared by all instances of the `Person` class whereas each instance has its own `age` variable.
 
-**Problem 2 (for submission):** Use your solution to Problem 1 to complete the function `getPriceOfOrder` in `shop.py`. Then complete the function `shopSmart(orders,shops)` in `shopSmart.py`, which takes an `orderList` (like the kind passed to `FruitShop.getPriceOfOrder`) and a list of `FruitShop`s and returns the `FruitShop` where your order costs the least amount in total.
+### Problem 2 (for submission)
+
+Use your solution to Problem 1 to complete the function `getPriceOfOrder` in `shop.py`. Then complete the function `shopSmart(orders,shops)` in `shopSmart.py`, which takes an `orderList` (like the kind passed to `FruitShop.getPriceOfOrder`) and a list of `FruitShop`s and returns the `FruitShop` where your order costs the least amount in total.
 
 The following variable definitions
 
@@ -281,7 +268,7 @@ This is where pyCharm's debug mode comes in. Normally when you run a program, th
 
 Debug mode is a key feature of an Integrated Development Environment (IDE) like PyCharm. It's one of the reasons we use IDE's instead of editing our code in Notepad or some such. And if you learn how to use debug mode in one IDE, you'll pretty much know how to do it in any one.
 
-#### Getting ready
+##### Getting ready
 
 To use debug mode, first make sure that you have set a 'run-configuration' in PyCharm. This just means that you have taken the steps so that you can click the green arrow in the top right to run your code.
 
@@ -296,7 +283,7 @@ If your project files are not in the list to the left, you can load them using t
 Once you can run your Python file using the arrow to the top-right, you can use debug mode. You can launch debug mode by clicking the 'bug' icon right next to the green arrow. When a program is started in debug mode, it may be a bit slower, especially at the start, so be patient.
  When an error is encountered in debug mode, the program will 'break', which means it will pause and show you where the error occurred.
 
-#### The Debug interface
+##### The Debug interface
 
 If you place run the file 'albert1.py` in PyCharm in debug mode, you should eventually see something like this:
 
@@ -316,7 +303,7 @@ At the bottom of the screen, some new windows have appeared. Two of them are of 
 
 You need to know that `<listcomp>` is a method that does 'list comprehension': the kind of stuff like `x for y in z`. This is exactly what we see on line 39. We also see that `distance` is called on that line: this makes perfect sense, since that was the previous level in the Frames list.
 
-#### Mouse-over
+##### Mouse-over
 
 In the Variables window, we now see the variables that exist in the list comprehension. Instead of reading the Variables window, we can also mouse-over the variables in the code, and get the same information. For example for the variable `ahpos` in the list comprehension, we again see that there is a method here:
 
@@ -328,7 +315,7 @@ Let's go one level higher in the Frames window, to `closestAHDistance`, to see w
 
 It seems certain that something is going wrong while creating the `ahPositions` variable. Why is there a 'method object' in it instead of a tuple of integers? We need to take a look at how the list is being created. However, the list already exists at the time that the program has halted. So how can we look at what's happening during its creation?
 
-####  Breakpoints
+#####  Breakpoints
 
 We saw that debug mode placed a breakpoint for us on line 31, in the `distance` method. We can also place our own breakpoints to tell debug mode to halt the program and let us take a look at what's happening. We can place a breaqkpoint on a line in the code, and the program will halt when it reaches that line.
 
@@ -345,7 +332,7 @@ Let's run the program in debug mode (the bug icon) after placing the breakpoint.
 
 The program has started executing, but it stopped when it encountered the breakpoint. We can now see the variables that exist at this point, just as before. We can mouse-over the variables that have been created so far in the method, and also the parameters to the method.
 
-#### Stepping
+##### Stepping
 
 Everything looks in order, there are no strange 'method objects' at this point yet. How do we proceed now? Do we remove the breakpoint and place a new one on the next line, then run debug mode again? That would be very tiresome.
  Luckily, there are tools to tell the program to advance through the code slowly. These are located just above the Frames and Variables windows.
@@ -367,7 +354,7 @@ This has brought us inside the method `getPosition` in the class `TerminalKamer`
  If you click 'Step over' now, the code will go to the next line in this method. That means that `tkpos` will then exist in the Variables window. Try it!
  We are now on line 38, where the culprit of our problem, the `ahPositions` list, is created.
 
-#### End boss
+##### End boss
 
 Now that we have arrived at the place where we know something is going wrong in our code, we will start clicking 'Step into' again, so that we can see exactly what is going on. Start by clicking it once.
 
@@ -405,14 +392,15 @@ ahPositions = [ah.getPosition() for ah in ahs]
 
 Now, our code runs just fine. The output should be 5.385164807134504 (the closest AH is about 5.39 units from the TK).
 
-#### Final thoughts
+#### Run configuration arguments
 
-We hope that the techniques described in this tutorial will be useful in the coming projects. Debug mode is a powerful tool, allowing you to much more easily spot problems and errors in your code.
+We might now want to restart debug mode to start the process over, because who knows, maybe we missed something. This means we have to hit the debug button again, and then need to copy-paste the command-line-arguments (```-p ReflexAgent -l testClassic```) into PyCharm again.
 
-There are a lot of features of debug mode that we haven't discussed, such as the ability to 'watch' variables and methods and change the values of variables on-the-fly. If you want to learn more about debugging techniques and how to use them in PyCharm, you could [look here](http://www.jetbrains.com/pycharm/webhelp/debugging.html)
-You are to hand in your solution to this problem as part of the homework. Good luck!
+There is an easier, faster way to do this. We can tell PyCharm to always run our program with these arguments. To do this, go to the menu at the top; ```Run -> Edit Configurations...```. The settings for the current default configuration (which is run when you click the green arrow) will be shown.
 
-#### Problem 3 (for submission)
+In the 'Script parameters' field, enter the arguments. Now, each time you hit the green arrow button, or the debug button, the arguments will automatically be entered. Don't forget to change the arguments when you get to another part of the assignment!
+
+### Problem 3 (for submission)
 
 The file `albert2.py` contains a different piece of code with an error. Running the code as-is results in a stacktrace. It is up to you to use the debugging features discussed above to find the error in the code and fix it, so that the desired result is given. You should upload the corrected `albert2.py` file as the solution to this problem.
 
@@ -433,3 +421,10 @@ For the five central Albert Heijns in Nijmegen, using Euclidean (straight line) 
 However, as said above, the code has an error. You should fix to code, so that the desired result is produced. The fix can be anything you like, but should be fairly small (not a complete rewrite of the code), and the resulting code should work for any set of Albert Heijns.
 
 Try to make use of the techniques discussed earlier in this assignment. At the very least, you should place a breakpoint at a line in the code, then use the debugger to step through the lines while looking at the values of variables at different points.
+
+#### Final thoughts
+
+We hope that the techniques described in this tutorial will be useful in the coming projects. Debug mode is a powerful tool, allowing you to much more easily spot problems and errors in your code.
+
+There are a lot of features of debug mode that we haven't discussed, such as the ability to 'watch' variables and methods and change the values of variables on-the-fly. If you want to learn more about debugging techniques and how to use them in PyCharm, you could [look here](http://www.jetbrains.com/pycharm/webhelp/debugging.html)
+You are to hand in your solution to this problem as part of the homework. Good luck!
