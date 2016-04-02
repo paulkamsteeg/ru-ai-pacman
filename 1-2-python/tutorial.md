@@ -3,7 +3,11 @@
 
 ### Table of Contents
 
-TODO
+* [Introduction](#introduction)
+* [Getting started](#getting-started)
+* [Python Basics](#python-basics)
+* [Executing Scripts](#executing-scripts)
+* [Writing Scripts](#writing-scripts)
 
 ### Introduction
 ---
