@@ -609,7 +609,7 @@ Do not change the `fruitPrices` variable.
 If you implemented the function correctly the script should output the following. Note that we will also test it for different orderlists.
 
 ```
-Cost of [('apples', 2.0), ('pears', 3.0), ('limes', 4.0)] is 12.25`
+Cost of [('apples', 2.0), ('pears', 3.0), ('limes', 4.0)] is 12.25
 ```
 
 **Advanced Exercise:** Write a `quickSort` function in
