@@ -1,4 +1,4 @@
-# Week 1: Python Tutorial
+# Week 1 part 1: Python
 
 ### Table of Contents
 

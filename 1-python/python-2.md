@@ -1,4 +1,4 @@
-# Week 1: Object orientation, PyCharm and debugging
+# Week 1 part 2: Object orientation, PyCharm and debugging
 
 
 ### Introduction
