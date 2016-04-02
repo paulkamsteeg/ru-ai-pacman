@@ -280,32 +280,32 @@ Pacman has more than 2 legal moves available).
 Here's a glossary of the key objects in the code base related to search
 problems, for your reference:
 
-- `SearchProblem (search.py)`
+- `SearchProblem` (`search.py`)
 
    A SearchProblem is an abstract object that represents the state
     space, successor function, costs, and goal state of a problem. You
     will interact with any SearchProblem only through the methods
     defined at the top of `search.py`
 
-- `PositionSearchProblem (searchAgents.py)` 
+- `PositionSearchProblem` (`searchAgents.py)` 
 
 	A specific type of SearchProblem that you will be working with ---
     it corresponds to searching for a single pellet in a maze.
 
-- `CrossroadSearchProblem (searchAgents.py)` 
+- `CrossroadSearchProblem` (`searchAgents.py)` 
 
     A specific type of SearchProblem that you will define for the *extra
     credit* problem --- it corresponds to searching only between
     cross-roads where pacman has to make a choice between directions
     to proceed.
 
-- `CornersProblem (searchAgents.py)` 
+- `CornersProblem` (`searchAgents.py)` 
 
 	A specific type of SearchProblem that you will define --- it
     corresponds to searching for a path through all four corners of
     a maze. (next week)
 
-- `FoodSearchProblem (searchAgents.py)` 
+- `FoodSearchProblem` (`searchAgents.py)` 
 
 	A specific type of SearchProblem that you will be working with ---
     it corresponds to searching for a way to eat all the pellets in
