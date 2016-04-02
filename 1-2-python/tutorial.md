@@ -4,10 +4,22 @@
 ### Table of Contents
 
 * [Introduction](#introduction)
+  * [Assignment submissions](#assignment-submissions)
 * [Getting started](#getting-started)
+  * [Invoking the Interpeter](#invoking-the-interpeter)
+  * [Using PyCharm](#using-pycharm)
 * [Python Basics](#python-basics)
+  * [Operators](#operators)
+  * [Strings](#strings)
+  * [`dir` and `help`](#dir-and-help)
+  * [Built-in Data Structures](#built-in-data-structures)
 * [Executing Scripts](#executing-scripts)
+  * [Executing `.py` files from PyCharm](#)
+  * [Executing `.py` files from the command prompt](#executing-py-files-from-the-command-prompt)
 * [Writing Scripts](#writing-scripts)
+  * [Beware of Indentation](#beware-of-indentation)
+  * [Writing Functions](#writing-functions)
+* [Problem 1](#problem-1)
 
 ### Introduction
 ---
@@ -458,7 +470,7 @@ information about them using `help`.
 In the next section you will learn about writing scripts. 
 There are 2 main ways to execute a `.py` file that you have written.
 
-#### Executing .py files from PyCharm
+#### Executing `.py` files from PyCharm
 
 Any `.py` file that is open in the PyCharm editor window can be executed
 by selecting the menu option `Run -> Run...` and clicking on the name
@@ -586,7 +598,9 @@ buyFruit('coconuts',2)
 
 Save this script as a file and run it. Look at the output and try to understand it.
 
-**Problem 1 (for submission):** Complete the `buyLotsOfFruit(orderList)` function in
+### Problem 1 (for submission)
+
+Complete the `buyLotsOfFruit(orderList)` function in
 `buyLotsOfFruit.py` which takes a list of `(fruit, weightInPounds)` tuples and returns the cost of the given list.
 If there is some `fruit` in the list which doesn't appear in
 `fruitPrices` it should return `None` (which is like `null` in Java).
