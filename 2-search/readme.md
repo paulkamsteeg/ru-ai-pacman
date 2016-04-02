@@ -287,25 +287,25 @@ problems, for your reference:
     will interact with any SearchProblem only through the methods
     defined at the top of `search.py`
 
-- `PositionSearchProblem` (`searchAgents.py)` 
+- `PositionSearchProblem` (`searchAgents.py`)
 
 	A specific type of SearchProblem that you will be working with ---
     it corresponds to searching for a single pellet in a maze.
 
-- `CrossroadSearchProblem` (`searchAgents.py)` 
+- `CrossroadSearchProblem` (`searchAgents.py`)
 
     A specific type of SearchProblem that you will define for the *extra
     credit* problem --- it corresponds to searching only between
     cross-roads where pacman has to make a choice between directions
     to proceed.
 
-- `CornersProblem` (`searchAgents.py)` 
+- `CornersProblem` (`searchAgents.py`)
 
 	A specific type of SearchProblem that you will define --- it
     corresponds to searching for a path through all four corners of
     a maze. (next week)
 
-- `FoodSearchProblem` (`searchAgents.py)` 
+- `FoodSearchProblem` (`searchAgents.py`)
 
 	A specific type of SearchProblem that you will be working with ---
     it corresponds to searching for a way to eat all the pellets in
