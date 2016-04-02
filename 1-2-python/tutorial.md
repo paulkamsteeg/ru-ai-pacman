@@ -19,7 +19,7 @@
 * [Writing Scripts](#writing-scripts)
   * [Beware of Indentation](#beware-of-indentation)
   * [Writing Functions](#writing-functions)
-* [Problem 1](#problem-1)
+* [Problem 1](#problem-1-for-submission)
 
 ### Introduction
 ---
