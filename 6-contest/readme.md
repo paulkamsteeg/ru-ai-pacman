@@ -243,7 +243,6 @@ may be revised to manage difficulty to evoke interesting behavior).
 
 **Important dates (subject to change)**
 
-<center>
 | Day of week | Date    | Time       | Event                                            |
 | ----------  | ------- | :--------: | ------------------------------------------------ |
 | Thursday    | June 5  |            | Contest announced and posted                     |
@@ -255,7 +254,6 @@ may be revised to manage difficulty to evoke interesting behavior).
 | Tuesday     | June 17 |            | Leaderboard updated                              |
 | Wednesday   | June 18 | 09:00      | **Competition Submission Deadline**              |
 | Thursday    | June 19 | 13:45      | Final contest and Awards ceremony in TvA 4.00.37 |
-</center>
 
 ### Grading
 
