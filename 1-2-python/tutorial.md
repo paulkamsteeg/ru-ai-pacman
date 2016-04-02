@@ -597,4 +597,4 @@ Cost of [('apples', 2.0), ('pears', 3.0), ('limes', 4.0)] is 12.25`
 **Advanced Exercise:** Write a `quickSort` function in
 Python using list comprehensions. Use the first element as the pivot.
 
-If run into problems with Python, be sure to check [the troubleshooting document](troubleshooting.md) for common errors.
+If you run into problems with Python, be sure to check [the troubleshooting document](troubleshooting.md) for common errors.
