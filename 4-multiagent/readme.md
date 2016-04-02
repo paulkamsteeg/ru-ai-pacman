@@ -186,7 +186,7 @@ Hints and observations:
     ghosts, but minimax agents always assume the worst:
 
 	```
-        python pacman.py -p MinimaxAgent -l trappedClassic -a depth=3 -k 1 
+    python pacman.py -p MinimaxAgent -l trappedClassic -a depth=3 -k 1 
 	```
 
     Make sure you understand why Pacman rushes the ghost in this case.
