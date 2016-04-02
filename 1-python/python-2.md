@@ -16,7 +16,7 @@ For this topic, you have to submit answers for problems 1 (`smartShop.py`) and 2
     -   [Defining Classes](#defining-classes)
     -   [Making and Using Objects](#making-and-using-objects)
     -   [Static vs Instance Variables](#static-vs-instance-variables)
--	[Problem 2 (for submission)](#problem-2-for-submission)
+-	[Problem 2](#problem-2-for-submission
 -   [Using PyCharm for Debugging](#using-pycharm-for-debugging)
     -   [Clicking the stacktrace](#clicking-the-stacktrace)
     -   [Finding definitions by Ctrl-click](#finding-definitions-by-ctrl-click)
@@ -30,7 +30,7 @@ For this topic, you have to submit answers for problems 1 (`smartShop.py`) and 2
         -   [Stepping](#stepping)
         -   [End boss](#end-boss)
     -   [Run configuration arguments](#run-configuration-arguments)
--	[Problem 3 (for submission)](#problem-3-for-submission)
+-	[Problem 3](#problem-3-for-submission)
 
 ### Classes and Objects in Python
 
