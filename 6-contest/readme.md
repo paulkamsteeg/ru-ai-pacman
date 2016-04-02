@@ -1,4 +1,4 @@
-# Topic 6: Pacman Survival Contest!
+## Topic 6: Pacman Survival Contest!
 
 ### Introduction
 
