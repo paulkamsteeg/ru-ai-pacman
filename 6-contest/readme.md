@@ -195,7 +195,7 @@ To get started designing your own agent, we recommend subclassing the
 `CompetitionAgent` class. This provides access to several
 convenience methods. Some useful methods are:
 
-```
+```py
 def getFood(self, gameState):
 	"""
 	Returns the food you can still eat. This is in the form
