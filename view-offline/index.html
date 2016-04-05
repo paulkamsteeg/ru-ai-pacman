@@ -39,8 +39,8 @@
     function handleFileSelect(e) {
       var reader = new FileReader();
       reader.onload = function(e) {
-        var result = reader.result.replace(/<\/?[^>]+>/g, ""); // remove <center> and other tags
-        result = result.replace(/!\[\]\((.*)\)/g, "Image: $1"); // rewrite image tags to text, because images don't work
+        var result = reader.result.replace(/<\/?[^>]+>/g, ""); // remove <center> and other tags (these are not rendered correctly)
+        result = result.replace(/!\[\]\((.*)\)/g, "(Image: $1)"); // rewrite image tags to text, because images don't work
         document.getElementById('preview').innerHTML = marked(result);
       }
       reader.readAsText(e.target.files[0]);
