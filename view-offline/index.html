@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <title>Offline Markdown Viewer</title>
+  <script src="js/marked.min.js"></script>
+  <script src="js/highlight.min.js"></script>
+  <link rel="stylesheet" href="css/style.css"> <!-- layout and markdown style -->
+  <link rel="stylesheet" href="css/github.css"> <!-- code styling -->
+</head>
+<body>
+
+  <h1>Offline Markdown Viewer</h1>
+
+  <p>
+    Choose a .md file to view its output. <br>
+    Note: Images will not be displayed. Instead, a path to the image
+    is shown. <br>
+    View the images separately in the 'images' folder of a
+    particular topic or by viewing the .md files directly online on GitHub.
+  </p>
+
+  <input type="file" id="files" name="files[]" />
+  <output id="list"></output>
+
+  <div id="preview"></div>
+
+  <script>
+    marked.setOptions({
+      renderer: new marked.Renderer(),
+      gfm: true,
+      tables: true,
+      breaks: false,
+      pedantic: false,
+      sanitize: false,
+      smartLists: true,
+      smartypants: true,
+      highlight: function(code) {return hljs.highlightAuto(code).value;}
+    });
+    function handleFileSelect(e) {
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        var result = reader.result.replace(/<\/?[^>]+>/g, ""); // remove <center> and other tags (these are not rendered correctly)
+        result = result.replace(/!\[\]\((.*)\)/g, "(Image: $1)"); // rewrite image tags to text, because images don't work
+        document.getElementById('preview').innerHTML = marked(result);
+      }
+      reader.readAsText(e.target.files[0]);
+    }
+    document.getElementById('files').addEventListener('change', handleFileSelect, false);
+  </script>
+
+</body>
+</html>
