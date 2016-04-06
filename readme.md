@@ -8,10 +8,14 @@ The course consists of 6 topics. View the directory of a topic to read the assoc
 
 There are several ways to use the material:
 
-- Download [a zip file](https://github.com/MareinK/ru-ai-pacman/archive/master.zip) containing the current state of the material. This is the easiest method and allows you to view the assignment descriptions offline. Be aware though that the online material may change. Check out the [commits list](https://github.com/MareinK/ru-ai-pacman/commits/master) to see whether anything has changed. If there are any significant changes, these will of course also be announced on Blackboard. Nonetheless, we recommend viewing the assignment descriptions online on GitHub.
+- Download [a zip file](https://github.com/MareinK/ru-ai-pacman/archive/master.zip) containing the current state of the material. This is the easiest method. Be aware though that the online material may change. Check out the [commits list](https://github.com/MareinK/ru-ai-pacman/commits/master) to see whether anything has changed. If there are any significant changes, these will of course also be announced on Blackboard.
 - Use [git](https://git-scm.com/) to pull the repository to your computer, directly or after [forking](https://help.github.com/articles/fork-a-repo/). This has the advantage of being able to easily pull in changes, but this method is not recommended unless you are familiar with git.
 
 Feel free to suggest changes to the material through pull requests!
+
+#### Viewing the assignment descriptions
+
+We recommend viewing the assignment descriptions (the ```readme.md``` files in each folder) online on GitHub for the best experience. However, if you want to download the assignment descriptions and view them offline, you can do so by opening the file ```view-offline/index.html``` in a browser and selecting the ```readme.md``` file you want to view. Be aware that images are not visible when using this method.
 
 #### Schedule April/June 2016
 
