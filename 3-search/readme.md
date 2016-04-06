@@ -1,4 +1,4 @@
-## Topic 2: Single agent search in Pacman
+## Topic 3: Single agent search in Pacman
 
 ### Introduction
 
@@ -91,7 +91,7 @@ through the following questions, you might need to refer to the
 [glossary of objects in the code](#object-glossary). First, test that the
 `SearchAgent` is working correctly by running:
 
-``` 
+```
 python pacman.py -l tinyMaze -p SearchAgent -a fn=tinyMazeSearch
 ```
 
@@ -130,7 +130,7 @@ which avoids expanding any already visited states (*P&M* section 3.7.1).
 
 Your code should quickly find a solution for:
 
-``` 
+```
 python pacman.py -l tinyMaze -p SearchAgent
 python pacman.py -l mediumMaze -p SearchAgent
 python pacman.py -l bigMaze -z .5 -p SearchAgent
@@ -157,7 +157,7 @@ Again, write a graph search algorithm that avoids expanding any already
 visited states. Test your code the same way you did for depth-first
 search.
 
-``` 
+```
 python pacman.py -l mediumMaze -p SearchAgent -a fn=bfs
 python pacman.py -l bigMaze -p SearchAgent -a fn=bfs -z .5
 ```
@@ -170,11 +170,11 @@ Does BFS find a least cost solution? If not, check your implementation.
 work equally well for the eight-puzzle search problem without any
 changes.
 
-``` 
+```
 python eightpuzzle.py
 ```
 
-### Run configuration arguments 
+### Run configuration arguments
 
 Tired of entering the command line arguments
 (like `bigMaze -p SearchAgent -a fn=bfs -z .5`)
@@ -192,7 +192,7 @@ Now, each time you hit the green arrow button, or the debug button, the
 arguments will automatically be entered. Don't forget to change the
 arguments when you get to another part of the assignment!
 
-### Varying the Cost Function 
+### Varying the Cost Function
 
 While BFS will find a fewest-actions path to the goal, we might want to
 find paths that are "best" in other senses. Consider
@@ -212,7 +212,7 @@ observe successful behavior in all three of the following layouts, where
 the agents below are all UCS agents that differ only in the cost
 function they use (the agents and cost functions are written for you):
 
-``` 
+```
 python pacman.py -l mediumMaze -p SearchAgent -a fn=ucs
 python pacman.py -l mediumDottedMaze -p StayEastSearchAgent
 python pacman.py -l mediumScaryMaze -p StayWestSearchAgent
@@ -238,8 +238,8 @@ a path through a maze to a fixed position using the Manhattan distance
 heuristic (implemented already as `manhattanHeuristic` in
 `searchAgents.py`).
 
-``` 
-python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic 
+```
+python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
 ```
 
 You should see that A\* finds the optimal solution slightly faster than
@@ -253,7 +253,7 @@ problems, in particular when more than one goal (i.e, food pellet) has
 to be reached. That will be the topic for next week's practical
 sessions.
 
-### Changing the representation 
+### Changing the representation
 
 The Pacman world is full of corridors. Clearly it's stupid for Pacman to
 go partway down a corridor and then turn around (when there are no
@@ -268,14 +268,14 @@ of problem abstraction, which is commonly used to speed up search - in
 particular in computer games, where the graph of cross-roads and moves
 between them is called the *waypoint graph*.
 
-### Bonus assignment (for submission) 
+### Bonus assignment (for submission)
 
 Implement the missing code in the
 `CrossroadSearchAgent` in `searchAgents.py`, so that
 one action is a move between crossroads in the map (i.e. points where
 Pacman has more than 2 legal moves available).
 
-### Object Glossary 
+### Object Glossary
 
 Here's a glossary of the key objects in the code base related to search
 problems, for your reference:
@@ -311,7 +311,7 @@ problems, for your reference:
     it corresponds to searching for a way to eat all the pellets in
     a maze. (next week)
 
-- Search Function 
+- Search Function
 
 	A search function is a function which takes an instance of
     SearchProblem as a parameter, runs some algorithm, and returns a
@@ -321,12 +321,10 @@ problems, for your reference:
     which is a very bad search function that only works correctly on
     `tinyMaze`
 
-- `SearchAgent` 
+- `SearchAgent`
 
 	`SearchAgent` is a class which implements an Agent (an
     object that interacts with the world) and does its planning through
     a search function. The `SearchAgent` first uses the search
     function provided to make a plan of actions to take to reach the
     goal state, and then executes the actions one at a time.
-
-

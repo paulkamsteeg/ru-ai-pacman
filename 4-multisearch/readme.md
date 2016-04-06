@@ -1,4 +1,4 @@
-## Topic 3: Multi-goal search in Pacman
+## Topic 4: Multi-goal search in Pacman
 
 ### Introduction
 
@@ -193,7 +193,7 @@ agent solves this maze (suboptimally!) in under a second with a path
 cost of 350:
 
 ```
-python pacman.py -l bigSearch -p ClosestDotSearchAgent -z .5 
+python pacman.py -l bigSearch -p ClosestDotSearchAgent -z .5
 ```
 
 *Hint:* The quickest way to complete `findPathToClosestDot` is
@@ -215,7 +215,7 @@ finds the shortest path using no more than 30 seconds of computation,
 you will get the extra credit points.
 
 ```
-python pacman.py -l bigSearch -p ApproximateSearchAgent -z .5 -q 
+python pacman.py -l bigSearch -p ApproximateSearchAgent -z .5 -q
 ```
 
 We will time your agent using the no graphics option `-q`, and
@@ -253,7 +253,7 @@ problems, for your reference:
     it corresponds to searching for a way to eat all the pellets in
     a maze.
 
-- Search Function 
+- Search Function
 
 	A search function is a function which takes an instance of
     SearchProblem as a parameter, runs some algorithm, and returns a
@@ -263,12 +263,10 @@ problems, for your reference:
     which is a very bad search function that only works correctly on
     `tinyMaze`
 
-- `SearchAgent` 
+- `SearchAgent`
 
 	`SearchAgent` is a class which implements an Agent (an
     object that interacts with the world) and does its planning through
     a search function. The `SearchAgent` first uses the search
     function provided to make a plan of actions to take to reach the
     goal state, and then executes the actions one at a time.
-
-
