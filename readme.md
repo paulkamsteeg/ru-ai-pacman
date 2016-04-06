@@ -17,7 +17,7 @@ Feel free to suggest changes to the material through pull requests!
 
 We recommend viewing the assignment descriptions (the ```readme.md``` files in each folder) online on GitHub for the best experience. However, if you want to download the assignment descriptions and view them offline, you can do so by opening the file ```view-offline/index.html``` in a browser and selecting the ```readme.md``` file you want to view. Be aware that images are not visible when using this method.
 
-#### Schedule April/June 2016
+#### Schedule April/May/June 2016
 
 Practical sessions are in:
 
