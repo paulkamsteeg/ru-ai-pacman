@@ -1,4 +1,4 @@
-## Topic 1 part 1: Python
+## Topic 1: Python
 
 ### Table of Contents
 
