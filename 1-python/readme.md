@@ -32,7 +32,7 @@ on the machines in the computer rooms. All material for this course was based la
 Submissions of assignments will happen using the usual Blackboard
 assignment submission system, where for each assignment you should
 upload the .py file(s) containing your assignment solution. Make sure
-that **only one member** of your group submits your assignment. 
+that **only one member** of your group submits your assignment.
 
 When you submit your assignment, you must make sure that **the names and student numbers (including prefix-s) of all members** are present in the assignment files, as comments. For example:
 
@@ -41,7 +41,7 @@ When you submit your assignment, you must make sure that **the names and student
 # Guidum van Rosso (s654321)
 ```
 
-For this assignment, you will need to hand in the file `buyLotsOfFruit.py` after completing it for Problem 1.
+For this assignment, you will need to hand in the file `buyLotsOfFruit.py` after completing it for assignment 1. You will hand this in at the end of week 2, together with the assignment files for topic 2.
 
 ### Getting started
 ---
@@ -157,7 +157,7 @@ False
 >>> not (1==0)
 True
 >>> (2==2) and (2==3)
-False 
+False
 >>> (2==2) or (2==3)
 True
 ```
@@ -234,14 +234,14 @@ To see what methods Python provides for a datatype, use the
 ['__add__', '__class__', '__contains__', '__delattr__', '__doc__', '__eq__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__getslice__', '__gt__', '__hash__', '__init__','__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__','__repr__', '__rmod__', '__rmul__', '__setattr__', '__str__', 'capitalize', 'center', 'count', 'decode', 'encode', 'endswith', 'expandtabs', 'find', 'index', 'isalnum', 'isalpha', 'isdigit', 'islower', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'replace', 'rfind','rindex', 'rjust', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
 >>> help(s.find)
 Help on built-in function find:
-    
+
 find(...) method of builtins.str instance
     S.find(sub[, start[, end]]) -> int
-    
+
     Return the lowest index in S where substring sub is found,
     such that sub is contained within s[start,end].  Optional
     arguments start and end are interpreted as in slice notation.
-    
+
     Return -1 on failure.
 
 >>> s.find('b')
@@ -466,7 +466,7 @@ information about them using `help`.
 ### Executing Scripts
 ---
 
-In the next section you will learn about writing scripts. 
+In the next section you will learn about writing scripts.
 There are 2 main ways to execute a `.py` file that you have written.
 
 #### Executing `.py` files from PyCharm
@@ -506,7 +506,7 @@ Run this file (using either the command line or PyCharm) and see what happens.
 Try to understand why the script produces the output that you see.
 
 ```py
-# This is what a comment looks like 
+# This is what a comment looks like
 fruits = ['apples','oranges','pears','bananas']
 for fruit in fruits:
     print(fruit + ' for sale')
@@ -525,7 +525,7 @@ The above code uses `for` to loop directly over a list. You can use `range` to g
 for index in range(len(lst)):
     print(lst[index])
 ```
-    
+
 Although in most cases you will want to loop directly over the list.
 
 ```py
@@ -561,15 +561,15 @@ Unlike many other languages, Python uses the indentation in the source
 code for interpretation. So for instance, the following script
 
 ```py
-if 0 == 1: 
+if 0 == 1:
     print('We live in a world of arithmetic pain')
-print('Math is not broken, all is well') 
+print('Math is not broken, all is well')
 ```
 
 will output `Math is not broken, all is well`. But if we had written the script as
 
 ```py
-if 0 == 1: 
+if 0 == 1:
     print('We are in a world of arithmetic pain')
     print('Thank you for playing')
 ```
@@ -590,9 +590,9 @@ def buyFruit(fruit, numPounds):
     else:
         cost = fruitPrices[fruit] * numPounds
         print("That'll be %f please" % (cost))
-   
+
 buyFruit('apples',2.4)
-buyFruit('coconuts',2)        
+buyFruit('coconuts',2)
 ```
 
 Save this script as a file and run it. Look at the output and try to understand it.

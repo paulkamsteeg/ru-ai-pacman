@@ -7,7 +7,8 @@ This tutorial goes into some more detail about working with Python, in particula
 
 #### Assignment submissions
 
-For this topic, you have to submit answers for assignments 1 (`smartShop.py`) and 2 (`albert2.py`).
+For this topic, you have to submit answers for assignments 2 (`smartShop.py`) and 3 (`albert2.py`), together with the answer to
+assignment 1 from week 1.
 
 ### Table of Contents
 
@@ -167,7 +168,7 @@ Traceback (most recent call last):
     return math.sqrt(pow(xy1[0] - xy2[0], 2) + pow(xy1[1] - xy2[1], 2))
 TypeError: 'method' object is not subscriptable
 ```
- 
+
 We're going to try and figure out what is causing this error.
 
 #### Clicking the stacktrace
@@ -244,7 +245,7 @@ def distance(xy1, xy2):
     return math.sqrt(pow(xy1[0] - xy2[0], 2) + pow(xy1[1] - xy2[1], 2))
 ```
 
-      
+
 
 Running the code now shows us this:
 
@@ -320,7 +321,7 @@ We saw that debug mode placed a breakpoint for us on line 31, in the `distance` 
 
 Let's say we want to take a look at everything that is happening in the `closestAHDistance` method. Let's start by placing a breakpoint on the first line of the function body, so that we can see what's happening there.
  You can place a breakpoint by clicking just to the right of the number of the line where you want the break to occur. A red ball icon will appear and the line will become red. A breakpoint only has effect in debug mode: if you run the program using the normal green arrow, it will ignore the breakpoint.
- 
+
  Let's place a breakpoint on line 37. Click on the location where the red ball is in this image:
 
 ![](images/placingabreakpoint.png "Placing a breakpoint")
