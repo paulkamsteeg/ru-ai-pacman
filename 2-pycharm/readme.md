@@ -125,7 +125,7 @@ In the code above, `age` is an instance variable and `population` is a static va
 
 ### Assignment 2 (for submission)
 
-Use your solution to Problem 1 to complete the function `getPriceOfOrder` in `shop.py`. Then complete the function `shopSmart(orders,shops)` in `shopSmart.py`, which takes an `orderList` (like the kind passed to `FruitShop.getPriceOfOrder`) and a list of `FruitShop`s and returns the `FruitShop` where your order costs the least amount in total.
+Use your solution to assignment 1 from last topic to complete the function `getPriceOfOrder` in `shop.py`. Then complete the function `shopSmart(orders,shops)` in `shopSmart.py`, which takes an `orderList` (like the kind passed to `FruitShop.getPriceOfOrder`) and a list of `FruitShop`s and returns the `FruitShop` where your order costs the least amount in total.
 
 The following variable definitions
 
