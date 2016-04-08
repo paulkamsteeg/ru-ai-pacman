@@ -80,11 +80,18 @@ This will open a window like this:
 ![](images/cmdprompt.gif)
 
 From the 'command-prompt', you start the Python interpreter by typing
-the command 'python'.
+the command 'python'. Note that this will probably not work on the FSW computers.
+Instead, use one of the below alternatives.
 
 Alternatively, you can also open the python interpreter from within the IDE PyCharm by
 selecting `Run Python Console ...` from the `Tools` menu. See the
 next section for more on the PyCharm IDE.
+
+Another alternative is to use SSH to log into the FWNI computers. On the FSW computers,
+this can be done by launching PuTTy from the start menu, typing ```lilo.science.ru.nl```
+as a Hostname, and pressing the Open button. Choose 'Yes' if a popup window appears.
+Then use your science username and password to log in. You can now type ```python3```
+to start the Python 3 interpreter.
 
 Either way you will be presented with a message looking something like
 the following (the actual numbers may vary depending on the python
