@@ -10,7 +10,7 @@ if __name__ == '__main__':
     import sys, os, re, importlib
 
     dir_local = os.getcwd()
-    dir_central = os.path.join(dir_local, '..', 'scripts')
+    dir_central = os.path.join(dir_local, '..', '..', 'scripts')
     sys.path.append(dir_central) # append the scripts dir to the path
 
     os.chdir(dir_central) # import pacman files from central scripts directory
