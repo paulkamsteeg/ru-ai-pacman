@@ -143,7 +143,7 @@ def _destroy_window(event=None):
     # global _root_window
     # _root_window.destroy()
     # _root_window = None
-    # print "DESTROY"
+    # print("DESTROY")
 
 
 def end_graphics():
@@ -285,7 +285,7 @@ def _keypress(event):
     # remap_arrows(event)
     _keysdown[event.keysym] = 1
     _keyswaiting[event.keysym] = 1
-    # print event.char, event.keycode
+    # print(event.char, event.keycode)
     _got_release = None
 
 

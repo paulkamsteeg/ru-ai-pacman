@@ -711,7 +711,7 @@ class Game:
 
                     self.totalAgentTimes[agentIndex] += move_time
                     """
-                    print "Agent: %d, time: %f, total: %f" %
+                    print("Agent: %d, time: %f, total: %f" %)
                     (agentIndex, move_time, self.totalAgentTimes[agentIndex])
                     """
                     if self.totalAgentTimes[agentIndex] >\
