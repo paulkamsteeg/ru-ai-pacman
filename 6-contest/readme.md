@@ -108,7 +108,9 @@ from a random agent may be a good thing to do.
 By default, the system will run through all the levels in layouts in
 turn computing the score for your agent in each layout. Thus to run all
 levels with a simple **reactive** `BaselineAgent` that the
-staff has provided:
+staff has provided you can run the following. Note that for the contest we are no longer
+using `run.py` but running `pacman.py` directly from the `contest-scripts`
+directory.
 
 ```
 python pacman.py -p BaselineAgent
