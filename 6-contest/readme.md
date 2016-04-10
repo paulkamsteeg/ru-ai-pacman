@@ -142,6 +142,12 @@ python pacman.py -n 10 -p BaselineAgent
 (Note: You can use the `-q` option to run the games in *non-graphic*
 mode to save CPU time.)
 
+<!--- The below does not actually work because --num=10 tells the script to use student number 10,
+which does not work as there are no files present in the 'student solutions' directory,  let alone
+with student number 10. Running the command without the --num argument does nothing as this would
+mean using all files in the 'student solutions' directory. I've commented out this section until the
+script is changed to incorporate this behaviour.
+
 Further to run the same code as used to generate the weekly leaderboards
 with your own agent (assuming this is in the `competitionAgents.py` file
 in the same directory) you can use:
@@ -154,6 +160,8 @@ When finished this will make a file called `leaderboard.html` which
 contains the complete summary of the results for your agent, in the same
 format as used for the leaderboard on blackboard. It also saves a
 summary of all the games played in `_games.pk`.
+
+-->
 
 Note: Please call your agent class `MyPacmanAgent` and
 derive it from CompetitionAgent so we can automatically run the code
