@@ -56,6 +56,8 @@ python run.py -l tinyCorners -p SearchAgent -a fn=bfs,prob=CornersProblem
 python run.py -l mediumCorners -p SearchAgent -a fn=bfs,prob=CornersProblem
 ```
 
+Remember you can also use PyCharm to execute `run.py`.
+
 To receive full credit, you need to define an abstract state
 representation that *does not* encode irrelevant information (like the
 position of ghosts, where extra food is, etc.). In particular, do not

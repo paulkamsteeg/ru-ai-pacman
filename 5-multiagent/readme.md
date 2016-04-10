@@ -39,6 +39,8 @@ First, play a game of classic Pacman:
 python run.py
 ```
 
+Remember you can also use PyCharm to execute `run.py`.
+
 Now, run the provided `ReflexAgent` in `multiAgents.py`:
 
 ```
