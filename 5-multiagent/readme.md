@@ -13,11 +13,6 @@ Pacman, including ghosts. Along the way, you will implement minimax
 search without and with alpha-beta-pruning, and try your hand at evaluation
 function design.
 
-The code base has changed a bit from the previous projects, so please
-start with a fresh installation, rather than intermingling files from
-earlier weeks. You can, however, copy-paste your own code or the example
-solutions in `search.py` and `searchAgents.py` in any way you want.
-
 #### Files you'll edit and submit
 
 * `multiAgents.py` where all of your multi-agent search agents will reside.
