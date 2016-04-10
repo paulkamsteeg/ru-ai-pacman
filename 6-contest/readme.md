@@ -147,7 +147,7 @@ with your own agent (assuming this is in the `competitionAgents.py` file
 in the same directory) you can use:
 
 ```
-python3 leaderboard.py --dir=. --num=10 --replay
+python leaderboard.py --dir=. --num=10 --replay
 ```
 
 When finished this will make a file called `leaderboard.html` which
