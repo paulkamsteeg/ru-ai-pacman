@@ -20,7 +20,7 @@ assignment, and some of which you can ignore.
 * `search.py` where all of your search algorithms will reside.
 * `searchAgents.py` where all of your search-based agents will reside.
 
-#### Files you might want to look at
+#### Files you might want to look at (found in the `scripts` folder)
 
 * `pacman.py`, the main file that runs Pacman games. This file describes a Pacman
 GameState type, which you use in this project.
@@ -32,16 +32,18 @@ supporting types like AgentState, Agent, Direction, and Grid.
 
 ### Welcome to Pacman
 
-After downloading the code, you should be able to play a
-game of Pacman by typing the following at the command line:
+After downloading the code, we recommand you create a new PyCharm project in
+the root folder of the course material (where the .gitignore file is also
+located). You can then navigate to the folder `3-search` and right-click
+on the file `run.py` and select `Run 'run'...` and press enter in the console window
+in the bottom. This should let you play a game of Pacman.
+
+Alternatively, you can navigate to the folder using the command-line and type
+the following line:
 
 ```
-python pacman.py
+python run.py
 ```
-
-**Note:** see the information in the Python tutorial for how to to use
-the command-line to execute these files. Alternatively, you can execute
-them directly from PyCharm by using the menu option `Run -> Run...`.
 
 Pacman lives in a shiny blue world of twisting corridors and tasty round
 treats. Navigating this world efficiently will be Pacman's first step in
@@ -53,7 +55,7 @@ agent). This agent can only be successful in very simple and special
 worlds:
 
 ```
-python pacman.py --layout testMaze --pacman GoWestAgent
+python run.py --layout testMaze --pacman GoWestAgent
 ```
 
 **Note**: again this is the command-line way to run the program.
@@ -65,17 +67,17 @@ The options are the bits after the `.py`, in this case
 But, things already get ugly for this agent when turning is required:
 
 ```
-python pacman.py --layout tinyMaze --pacman GoWestAgent
+python run.py --layout tinyMaze --pacman GoWestAgent
 ```
 
 If pacman gets stuck, you can exit the game by typing CTRL-c into your
-terminal. Note that `pacman.py` supports a number of
+terminal. Note that `run.py` supports a number of
 parameters (options) that can each be expressed in a long way (e.g.,
 `--layout`) or a short way (e.g., `-l`). You can see
 the list of all options and their default values via:
 
 ```
-python pacman.py -h
+python run.py -h
 ```
 
 Also, all of the commands that appear in this topic also appear in
@@ -92,7 +94,7 @@ through the following questions, you might need to refer to the
 `SearchAgent` is working correctly by running:
 
 ```
-python pacman.py -l tinyMaze -p SearchAgent -a fn=tinyMazeSearch
+python run.py -l tinyMaze -p SearchAgent -a fn=tinyMazeSearch
 ```
 
 The command above tells the `SearchAgent` to use
@@ -131,9 +133,9 @@ which avoids expanding any already visited states (*P&M* section 3.7.1).
 Your code should quickly find a solution for:
 
 ```
-python pacman.py -l tinyMaze -p SearchAgent
-python pacman.py -l mediumMaze -p SearchAgent
-python pacman.py -l bigMaze -z .5 -p SearchAgent
+python run.py -l tinyMaze -p SearchAgent
+python run.py -l mediumMaze -p SearchAgent
+python run.py -l bigMaze -z .5 -p SearchAgent
 ```
 
 The Pacman board will show an overlay of the states explored, and the
@@ -158,8 +160,8 @@ visited states. Test your code the same way you did for depth-first
 search.
 
 ```
-python pacman.py -l mediumMaze -p SearchAgent -a fn=bfs
-python pacman.py -l bigMaze -p SearchAgent -a fn=bfs -z .5
+python run.py -l mediumMaze -p SearchAgent -a fn=bfs
+python run.py -l bigMaze -p SearchAgent -a fn=bfs -z .5
 ```
 
 Does BFS find a least cost solution? If not, check your implementation.
@@ -186,7 +188,7 @@ To do this, go to the menu at the top; `Run -> Edit Configurations...`.
 The settings for the current default configuration
 (which is run when you click the green arrow) are shown. In the 'Script
 parameters' field, enter the arguments you like (without `python
-pacman.py`).
+run.py`).
 
 Now, each time you hit the green arrow button, or the debug button, the
 arguments will automatically be entered. Don't forget to change the
@@ -213,9 +215,9 @@ the agents below are all UCS agents that differ only in the cost
 function they use (the agents and cost functions are written for you):
 
 ```
-python pacman.py -l mediumMaze -p SearchAgent -a fn=ucs
-python pacman.py -l mediumDottedMaze -p StayEastSearchAgent
-python pacman.py -l mediumScaryMaze -p StayWestSearchAgent
+python run.py -l mediumMaze -p SearchAgent -a fn=ucs
+python run.py -l mediumDottedMaze -p StayEastSearchAgent
+python run.py -l mediumScaryMaze -p StayWestSearchAgent
 ```
 
 **Note:** You should get very low and very high path costs for the
@@ -239,7 +241,7 @@ heuristic (implemented already as `manhattanHeuristic` in
 `searchAgents.py`).
 
 ```
-python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
+python run.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
 ```
 
 You should see that A\* finds the optimal solution slightly faster than

@@ -21,7 +21,7 @@ make a fresh project by downloading all the code.
 * `searchAgents.py` where all of your search-based agents, and search problem definitions
 will reside.
 
-#### Files you might want to look at
+#### Files you might want to look at (found in the `scripts` folder)
 
 * `pacman.py`, the main file that runs Pacman games. This file describes a Pacman
 GameState type, which you use in this project.
@@ -52,8 +52,8 @@ whether all four corners have been reached. Now, your search agent
 should solve:
 
 ```
-python pacman.py -l tinyCorners -p SearchAgent -a fn=bfs,prob=CornersProblem
-python pacman.py -l mediumCorners -p SearchAgent -a fn=bfs,prob=CornersProblem
+python run.py -l tinyCorners -p SearchAgent -a fn=bfs,prob=CornersProblem
+python run.py -l mediumCorners -p SearchAgent -a fn=bfs,prob=CornersProblem
 ```
 
 To receive full credit, you need to define an abstract state
@@ -90,7 +90,7 @@ expanding fewer than 1200 nodes. Expand fewer than 800, and you're doing
 great!
 
 ```
-python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
+python run.py -l mediumCorners -p AStarCornersAgent -z 0.5
 ```
 
 *Hint:* Remember, heuristic functions just return numbers, which, to be
@@ -118,7 +118,7 @@ uniform-cost search) should quickly find an optimal solution to
 (total cost of 7).
 
 ```
-python pacman.py -l testSearch -p AStarFoodSearchAgent
+python run.py -l testSearch -p AStarFoodSearchAgent
 ```
 
 *Note:* `AStarFoodSearchAgent` is a shortcut for
@@ -135,7 +135,7 @@ nodes.
 `trickySearch` board:
 
 ```
-python pacman.py -l trickySearch -p AStarFoodSearchAgent
+python run.py -l trickySearch -p AStarFoodSearchAgent
 ```
 
 Our UCS agent finds the optimal solution in about 13 seconds, exploring
@@ -193,7 +193,7 @@ agent solves this maze (suboptimally!) in under a second with a path
 cost of 350:
 
 ```
-python pacman.py -l bigSearch -p ClosestDotSearchAgent -z .5
+python run.py -l bigSearch -p ClosestDotSearchAgent -z .5
 ```
 
 *Hint:* The quickest way to complete `findPathToClosestDot` is
@@ -215,7 +215,7 @@ finds the shortest path using no more than 30 seconds of computation,
 you will get the extra credit points.
 
 ```
-python pacman.py -l bigSearch -p ApproximateSearchAgent -z .5 -q
+python run.py -l bigSearch -p ApproximateSearchAgent -z .5 -q
 ```
 
 We will time your agent using the no graphics option `-q`, and

@@ -22,7 +22,7 @@ solutions in `search.py` and `searchAgents.py` in any way you want.
 
 * `multiAgents.py` where all of your multi-agent search agents will reside.
 
-#### Files you might want to look at
+#### Files you might want to look at (found in the `scripts` folder)
 
 * `pacman.py`, the main file that runs Pacman games. This file also describes a Pacman
  `GameState` type, which you will use extensively in this project.
@@ -36,19 +36,19 @@ supporting types like AgentState, Agent, Direction, and Grid.
 First, play a game of classic Pacman:
 
 ```
-python pacman.py
+python run.py
 ```
 
 Now, run the provided `ReflexAgent` in `multiAgents.py`:
 
 ```
-python pacman.py -p ReflexAgent
+python run.py -p ReflexAgent
 ```
 
 Note that it plays quite poorly even on simple layouts:
 
 ```
-python pacman.py -p ReflexAgent -l testClassic
+python run.py -p ReflexAgent -l testClassic
 ```
 
 Inspect its code (in `multiAgents.py`) and make sure you understand what
@@ -74,15 +74,15 @@ ghost locations to perform well. Your agent should easily and reliably
 clear the `testClassic` layout:
 
 ```
-python pacman.py -p ReflexAgent -l testClassic
+python run.py -p ReflexAgent -l testClassic
 ```
 
 Try out your reflex agent on the default `mediumClassic` layout with one
 ghost or two (and animation off to speed up the display):
 
 ```
-python pacman.py --frameTime 0 -p ReflexAgent -k 1
-python pacman.py --frameTime 0 -p ReflexAgent -k 2
+python run.py --frameTime 0 -p ReflexAgent -k 1
+python run.py --frameTime 0 -p ReflexAgent -k 2
 ```
 
 How does your agent fare? It will likely often die with 2 ghosts on the
@@ -111,7 +111,7 @@ infinitely (i.e. repeatedly moving back and forth between two positions,
 making no progress).
 
 ```
-python pacman.py -p ReflexAgent -l openClassic -n 10 -q
+python run.py -p ReflexAgent -l openClassic -n 10 -q
 ```
 
 Don't spend too much time on this question, though, as the meat of the
@@ -157,7 +157,7 @@ Hints and observations:
     by its game score.
 
 	```
-	python pacman.py -p MinimaxAgent -l minimaxClassic -a depth=4 -k 1
+	python run.py -p MinimaxAgent -l minimaxClassic -a depth=4 -k 1
 	```
 
 -   To increase the search depth achievable by your agent, remove the
@@ -186,7 +186,7 @@ Hints and observations:
     ghosts, but minimax agents always assume the worst:
 
 	```
-    python pacman.py -p MinimaxAgent -l trappedClassic -a depth=3 -k 1
+    python run.py -p MinimaxAgent -l trappedClassic -a depth=3 -k 1
 	```
 
     Make sure you understand why Pacman rushes the ghost in this case.
@@ -206,7 +206,7 @@ as depth 2 minimax). Ideally, depth 3 on `smallClassic` should run in
 just a few seconds per move or faster.
 
 ```
-python pacman.py -p AlphaBetaAgent -a depth=3 -l smallClassic -k 1
+python run.py -p AlphaBetaAgent -a depth=3 -l smallClassic -k 1
 ```
 
 The `AlphaBetaAgent` minimax values should be identical to the
@@ -234,7 +234,7 @@ run at a reasonable rate (to get full credit, Pacman should be averaging
 around 1000 points when he's winning).
 
 ```
-python pacman.py -l smallClassic -p MinimaxAgent -a evalFn=better -q -n 10 -k 1
+python run.py -l smallClassic -p MinimaxAgent -a evalFn=better -q -n 10 -k 1
 ```
 
 Document your evaluation function! We're very curious about what great

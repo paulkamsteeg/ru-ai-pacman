@@ -478,9 +478,8 @@ There are 2 main ways to execute a `.py` file that you have written.
 
 #### Executing `.py` files from PyCharm
 
-Any `.py` file that is open in the PyCharm editor window can be executed
-by selecting the menu option `Run -> Run...` and clicking on the name
-of the file (shown without the `.py` bit) that you want to run.
+Any `.py` file that is open in PyCharm can be executed
+by navigating to the file, right clicking it, and selecting `Run 'filename'...`.
 
 #### Executing `.py` files from the command prompt
 
