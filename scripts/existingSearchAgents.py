@@ -81,6 +81,9 @@ class SearchAgent(Agent):
         starttime = time.time()
         problem = self.searchType(state)  # Makes a new search problem
         self.actions = self.searchFunction(problem)  # Find a path
+        assert problem.getStartState() != None, "getStartState() returned None."
+        assert self.actions != None, "The search function did not return a value."
+        if self.actions == []: print('NOTE: the search function returned an empty list.')
         totalCost = problem.getCostOfActions(self.actions)
         print(('Path found with total cost of %d in %.1f seconds' %
                (totalCost, time.time() - starttime)))
@@ -94,6 +97,7 @@ class SearchAgent(Agent):
 
         state: a GameState object (pacman.py)
         """
+
         if 'actionIndex' not in dir(self):
             self.actionIndex = 0
         i = self.actionIndex
