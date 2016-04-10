@@ -12,8 +12,8 @@ htmlstyle = 'leaderboard.css'
 htmloutputfile = 'leaderboard.html'
 
 def saveobject(filename,obj):
-  #print "Saving ",obj
-  #print "to %s\n" % filename
+  #print("Saving ",obj)
+  #print("to %s\n" % filename)
   output = open(filename, 'wb')
   pickle.dump(obj, output, pickle.HIGHEST_PROTOCOL)
 
@@ -108,7 +108,7 @@ def runFile(file,replay=False,args=[]):
   except subprocess.CalledProcessError as e:
     failed = True
     output = e.output
-  # Print result
+  # Print(result)
   if failed:
     fileoutput += 'Failed :\n' + output + '\n\n'
   else:
@@ -181,7 +181,7 @@ def main(argv):
     # extract student number and remove duplicates
     oldgroup=None
     files=[]
-    #print '\n'.join(solnfiles)
+    #print('\n'.join(solnfiles))
     for file in solnfiles:
       groupName = getGroupName(file)
       if not groupName == None :
@@ -190,7 +190,7 @@ def main(argv):
         else:
           oldgroup = groupName
           files.append(file)
-    #print '\n'.join(files)
+    #print('\n'.join(files))
     for file in files:
       score,output = runFile(file,replay,args)
       logfile.write(output)
@@ -234,10 +234,5 @@ if __name__ == "__main__":
     
   # ask for arguments if none given
   if len(sys.argv) == 1:
-    if sys.version_info < (3,0):
-      print "Warning: Python version <3.0 detected..... YMMV!"
-      sys.argv.extend([x for x in re.split(r' *',raw_input("Enter any command line arguments?")) if x!=''])
-    else:
-      print("Warning: Python version >3.0 detected..... Nice!")        
       sys.argv.extend([x for x in re.split(r' *',input("Enter any command line arguments?")) if x!=''])
   main(sys.argv[1:])
