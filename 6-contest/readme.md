@@ -39,6 +39,16 @@ python pacman.py -p MyPacmanAgent
 * `keyboardAgents.py`, keyboard interfaces to control Pacman.
 * `layout.py`, code for reading layout files and storing their contents.
 
+
+### Table of Contents
+
+-   [Rules of Pacman Survival](#rules-of-pacman-survival)
+-   [Getting Started](#getting-started)
+-   [Official Tournaments](#official-tournaments)
+-   [Designing Agents](#designing-agents)
+-   [Contest Details](#contest-details)
+-   [Grading](#grading)
+
 ### Rules of Pacman Survival
 
 **Level Scoring:** When a Pacman eats a food dot, the food is

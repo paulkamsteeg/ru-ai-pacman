@@ -30,6 +30,19 @@ supporting types like AgentState, Agent, Direction, and Grid.
 
 * `util.py`, useful data structures for implementing search algorithms.
 
+### Table of Contents
+
+-   [Welcome to Pacman](#welcome-to-pacman)
+-	[Finding a Fixed Food Dot using Search Algorithms](#finding-a-fixed-food-dot-using-search-algorithms)
+-	[Assignment 1](#assignment-1-for-submission)
+-	[Run configuration arguments](#run-configuration-arguments)
+-	[Varying the Cost Function](#varying-the-cost-function)
+- 	[Assignment 3](#assignment-3-for-submission)
+- 	[Assignment 4](#assignment-4-for-submission)
+-	[Changing the representation](#changing-the-representation)
+-	[Bonus assignment](#bonus-assignment-for-submission)
+-	[Object Glossary](object-glossary)
+
 ### Welcome to Pacman
 
 After downloading the code, we recommand you create a new PyCharm project in

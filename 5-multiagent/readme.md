@@ -25,6 +25,15 @@ function design.
 supporting types like AgentState, Agent, Direction, and Grid.
 * `util.py`, useful data structures for implementing search algorithms.
 
+### Table of Contents
+
+-   [Multi-Agent Pacman](#multi-agent-pacman)
+-   [Assignment 1](#assignment-1)
+-   [Assignment 2](#assignment-2)
+-   [Assignment 3](#assignment-3)
+-   [Better evaluation and/or more opponents](#better-evaluation-andor-more-opponents)
+-   [Bonus assignment A](#bonus-assignment-a)
+-   [Bonus assignment B](#bonus-assignment-b)
 
 ### Multi-Agent Pacman
 

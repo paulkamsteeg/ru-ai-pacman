@@ -29,7 +29,19 @@ GameState type, which you use in this project.
 supporting types like AgentState, Agent, Direction, and Grid.
 * `util.py`, useful data structures for implementing search algorithms.
 
-### Finding All the Corners
+### Table of Contents
+
+-   [Finding all the Corners](#finding-all-the-corners)
+-   [Assignment 1](#assignment-1)
+-   [Assignment 2](#assignment-2)
+-   [Eating All The Dots](#eating-all-the-dots)
+-   [Assignment 3](#assignment-3)
+-   [Suboptimal Search](#suboptimal-search)
+-   [Assignment 4](#assignment-4)
+-   [Bonus assignment](#bonus-assignment)
+-   [Object Glossary](#object-glossary)
+
+### Finding all the Corners
 
 The real power of A\* will only be apparent with a more challenging
 search problem than last week's. This week, it's time to formulate a new
@@ -131,7 +143,9 @@ simple `tinySearch`. As a reference, our implementation takes
 2.5 seconds to find a path of length 27 after expanding 4902 search
 nodes.
 
-***Assignment 3:*** Fill in `foodHeuristic` in
+### Assignment 3
+
+Fill in `foodHeuristic` in
 `searchAgents.py` with a consistent heuristic for the
 `FoodSearchProblem`. Try your agent on the
 `trickySearch` board:
