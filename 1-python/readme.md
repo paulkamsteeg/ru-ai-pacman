@@ -5,8 +5,7 @@
 * [Introduction](#introduction)
   * [Assignment submissions](#assignment-submissions)
 * [Getting started](#getting-started)
-  * [Invoking the Interpeter](#invoking-the-interpeter)
-  * [Using PyCharm](#using-pycharm)
+  * [Loading the files into PyCharm](#loading-the-files-into-pycharm)
 * [Python Basics](#python-basics)
   * [Operators](#operators)
   * [Strings](#strings)
@@ -21,11 +20,13 @@
 * [Assignment 1](#assignment-1-for-submission)
 
 ### Introduction
----
 
 This tutorial covers all the basics you need to know to work with Python
 on the machines in the computer rooms. All material for this course was based largely on the
 [original material](http://ai.berkeley.edu/project_overview.html) from the University of California, Berkeley.
+
+The goal for the first week is to read this document and make the exercises you find within in. At
+the end you will find the hand-in assignment for this week.
 
 #### Assignment submissions
 
@@ -44,31 +45,29 @@ When you submit your assignment, you must make sure that **the names and student
 For this assignment, you will need to hand in the file `buyLotsOfFruit.py` after completing it for assignment 1. You will hand this in at the end of week 2, together with the assignment files for topic 2.
 
 ### Getting started
----
 
 The programming assignments in this course will be written in
 [Python](http://www.python.org/about/), an interpreted, object-oriented
 language. This tutorial will walk through the primary syntactic
 constructions in Python, using short examples. Python code files end in the extension `.py`.
 
-You may find the [Troubleshooting](#Troubleshooting) section helpful if
+You may find [the troubleshooting document](troubleshooting.md) helpful if
 you run into problems. It contains a list of some problems previous students
 have frequently encountered when following this tutorial.
 
-Like languages such as Lisp, Scheme and Prolog, Python is an interpreted
-language: it can execute source code commands directly, without having
-to be compiled first. It can therefore be used in two modes: either by
+Python is an interpreted
+language, which means it can execute source code commands directly, without having
+to be compiled first, like for example C++. It can therefore be used in two modes: either by
 executing a source file (called a *script* in Python), or
 *interactively* by typing in commands one-by-one and having Python
 execute them directly. In the exercises below, we will first use the
 Python interpreter interactively, then move to writing scripts.
 
-But before we can start on the exercises, you should be able to invoke
-and use both the Python interpreter itself, and the Integrated
-Development Environment (IDE) PyCharm that we will use for writing and
-executing scripts.
+You will be using a program called PyCharm to develop your Python code.
 
-#### Invoking the Interpeter
+<!--- no longer using the command line, rather the interpreter inside pycharm
+
+#### Using the Interpreter
 
 To invoke the interactive **Python Interpreter** outside of an IDE, you
 first need to start a *command-prompt*. In Windows you find this by opening
@@ -103,43 +102,46 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-#### Using PyCharm
+-->
+
+#### Loading the files into PyCharm
 
 [PyCharm](http://www.jetbrains.com/pycharm/documentation/) is an
 Integrated Development Environment for developing Python programs. On
 the Windows computers used for our exercises you can start PyCharm from
 `Start -> All Programs -> JetBrains -> PyCharm`.
 
-Note that double-clicking on a `.py` file will probably open a different IDE
-(namely IDLE) by default, which can also be used, but is not as good. In that
-case, you have to set the default application for opening files with .py
-extension to PyCharm.
+After downloading and extracting [the course material archive file](https://github.com/MareinK/ru-ai-pacman/archive/master.zip),
+ you should open it as a new project in PyCharm. To do so, choose `File -> Open...` in PyCharm
+and navigate to the root folder of the extracted archive (it should be called 'ru-ai-pacman-master').
+Your project list on the left should now look something like below.
 
-When you start PyCharm for the first time, you have to tell it which
-version of Python to use. `Configure -> Preferences -> Project interpreter -> Python interpreters ` will show a window where you can click the `+` at the top right to select a Python version. **Be sure to select a version of Python 3 (such as 3.4 or 3.5).**
+![](images/project-loaded.png)
 
-When PyCharm is started for the first time, it will open without a
-project. If you already have a folder with the relevant files for a
-project, you can use `File -> Open Directory...` to make PyCharm use that
-as a project: after loading you will see all files in the folder listed
-on the left side.
-
-If you don't already have a project-folder, you can get PyCharm to make
-(an empty) one within the PycharmProjects folder with the menu option
-`File -> New Project...`. You can then add (empty) `.py` files from within
-PyCharm with the menu option `File->New...`, or copy existing `.py` files
-to the project-folder from outside PyCharm.
+After opening the project, you will have to check that it is using
+the **correct version of Python**. Go to `Configure -> Preferences -> Project interpreter -> Python interpreters`.
+This will show a window where you can click the `+` at the top right to select a Python version.
+**Be sure to select a version of Python 3 (such as 3.4 or 3.5).**
 
 For information on how to run the `.py` files you've written or edited,
 see the section [Executing Scripts](#Executing%20Scripts).
 
 At any point, you can open an interactive Python interpreter window with
-`Tools -> Run Python Console...`
+`Tools -> Run Python Console...`, which you will need for the following sections.
+Open the interpreter now and check that it displays something like the following.
+
+```
+Python 3.4.0 (v3.4.0:04f714765c13, Mar 15 2014, 23:02:41) [GCC 3.4.6] on win64
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+```
+
+If it says `Python 2` instead of `Python 3` on the first line,
+you have not configured your Python version correctly (see above).
 
 ### Python Basics
----
 
-For this first part, we will use the interactive Python interpreter (see
+For this first part, we will use **the interactive Python interpreter** (see
 above).
 
 #### Operators
@@ -276,7 +278,6 @@ True
 Python comes equipped with some useful built-in data structures, broadly
 similar to Java's collections package.
 
----
 
 **Lists** store a sequence of mutable items with indices starting at 0:
 
@@ -359,8 +360,6 @@ Tip: look at the first letter of each string. Remember that you can find the
 methods you can call on an object using `dir` and get
 information about them using `help`.
 
----
-
 A data structure similar to the list is the **tuple**, which is like a
 list except that it is immutable (i.e. once it is created, you cannot
 change its content anymore). Note that tuples are surrounded with
@@ -383,7 +382,6 @@ The attempt to modify an immutable structure raised an exception. Exceptions
 indicate errors. 'Index out of bounds', 'type error' , and so on, will
 all report exceptions in this way.
 
----
 
 A **set** is a data structure that serves as an unordered list with
 no duplicate items. Below, we show how to create a set, add things to
@@ -418,7 +416,6 @@ traversal or print order will be the same across machines or program executions.
 This also means that sets cannot be indexed in the usual manner (e.g. `setOfShapes[0]`
 results in an error), but they can only be iterated over. More on this later.
 
----
 
 The last built-in data structure we will discuss is the **dictionary** which stores a map
 from one type of object (the `key`) to another (the `value`). Here 'map' does not mean a
@@ -471,9 +468,8 @@ methods you can call on an object using `dir` and get
 information about them using `help`.
 
 ### Executing Scripts
----
 
-In the next section you will learn about writing scripts.
+Before learning how to write a script, you will learn how to execute it.
 There are 2 main ways to execute a `.py` file that you have written.
 
 #### Executing `.py` files from PyCharm
@@ -484,32 +480,28 @@ by navigating to the file, right clicking it, and selecting `Run 'filename'...`.
 #### Executing `.py` files from the command prompt
 
 You can also invoke Python directly to execute your `.py` file from
-outside PyCharm. To do so you need to first start a command prompt.
+outside PyCharm. This is an advanced procedure that some students may wish to use,
+but in general we suggest using the PyCharm method described above.
+
+To execute Python from the command prompt, you need to first start a command prompt.
+This can be done from the start menu (by searching for 'cmd').
+
 To execute your `.py` file you then need to change directory to the
-directory where your file exists. You do this using the 'cd' command.
-
-So if, for example, your file `example.py` was saved in
-
-`C:\Documents and Settings\user\PycharmProjects\pythonTutorial`
-
-you would first do
-
-`cd C:\Documents and Settings\user\PycharmProjects\pythonTutorial`
-
-Now you can run your `.py` file by typing `python example.py`.
+directory where your file exists. You do this using [the `cd`) command](http://www.computerhope.com/issues/ch000795.htm).
+Then you can run your `.py` file by typing `python example.py`.
 
 You can also execute your file with command line options by simply
 adding them to the above line. For example to add 2 options 'option1' and 'option2' use
 `python example.py option1 option2`.
 
 ### Writing Scripts
----
 
 Now that you've got a handle on how to use Python interactively and how
 to invoke Python on scripts, let's write a simple Python script that
-demonstrates Python's `for` loop. Create a file and fill it with the following code.
-Run this file (using either the command line or PyCharm) and see what happens.
-Try to understand why the script produces the output that you see.
+demonstrates Python's `for` loop. Create a new file in the `1-python` directory called `fruit.py`
+(right-click the directory in PyCharm and choose `New -> Python file`)
+and fill it with the following code. Run this file (using either the command line or PyCharm, see above)
+and see what happens. Try to understand why the script produces the output that you see.
 
 ```py
 # This is what a comment looks like
@@ -539,14 +531,15 @@ for element in lst:
     print(element)
 ```
 
-These two pieces of code have exactly the same effect. If you want to have both the index and the element available, there's an easy way to do that, too.
+These two pieces of code have exactly the same effect. If you want to have both
+the index and the element available, there's an easy way to do that, too.
 
 ```py
 for index, element in enumerate(lst):
     print('element ' + element + ' at index ' + index)
 ```
 
-Now create a new script file and fill it with the following code. Run it and try to understand the results.
+Now create a new script file called `numbers.py` and fill it with the following code. Run it and try to understand the results.
 The statements on lines 2 and 4 contain so-called *list-comprehensions*. These create new lists based on existing lists.
 
 ```py

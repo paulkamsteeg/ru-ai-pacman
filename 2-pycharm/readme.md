@@ -12,6 +12,7 @@ assignment 1 from week 1.
 
 ### Table of Contents
 
+-   [Loading the files into PyCharm](#loading-the-files-into-pycharm)
 -   [Classes and Objects in Python](#classes-and-objects-in-python)
     -   [Object Orientation Basics](#object-orientation-basics)
     -   [Defining Classes](#defining-classes)
@@ -31,6 +32,38 @@ assignment 1 from week 1.
         -   [Stepping](#stepping)
         -   [End boss](#end-boss)
 -	[Assignment 3](#assignment-3-for-submission)
+
+#### Loading the files into PyCharm
+
+This is a repitition of the instructions from the last topic.
+
+After downloading and extracting [the course material archive file](https://github.com/MareinK/ru-ai-pacman/archive/master.zip),
+ you should open it as a new project in PyCharm. To do so, choose `File -> Open...` in PyCharm
+and navigate to the root folder of the extracted archive (it should be called 'ru-ai-pacman-master').
+Your project list on the left should now look something like below.
+
+![](images/project-loaded.png)
+
+After opening the project, you will have to check that it is using
+the **correct version of Python**. Go to `Configure -> Preferences -> Project interpreter -> Python interpreters`.
+This will show a window where you can click the `+` at the top right to select a Python version.
+**Be sure to select a version of Python 3 (such as 3.4 or 3.5).**
+
+For information on how to run the `.py` files you've written or edited,
+see the section *Executing Scripts* from the previous topic.
+
+At any point, you can open an interactive Python interpreter window with
+`Tools -> Run Python Console...`, which you will need for the following sections.
+Open the interpreter now and check that it displays something like the following.
+
+```
+Python 3.4.0 (v3.4.0:04f714765c13, Mar 15 2014, 23:02:41) [GCC 3.4.6] on win64
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+```
+
+If it says `Python 2` instead of `Python 3` on the first line,
+you have not configured your Python version correctly (see above).
 
 ### Classes and Objects in Python
 
