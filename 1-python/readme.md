@@ -124,7 +124,7 @@ This will show a window where you can click the `+` at the top right to select a
 **Be sure to select a version of Python 3 (such as 3.4 or 3.5).**
 
 For information on how to run the `.py` files you've written or edited,
-see the section [Executing Scripts](#Executing%20Scripts).
+see the section [Executing Scripts](#executing_scripts).
 
 At any point, you can open an interactive Python interpreter window with
 `Tools -> Run Python Console...`, which you will need for the following sections.
