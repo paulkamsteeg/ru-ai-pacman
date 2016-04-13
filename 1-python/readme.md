@@ -487,7 +487,7 @@ To execute Python from the command prompt, you need to first start a command pro
 This can be done from the start menu (by searching for 'cmd').
 
 To execute your `.py` file you then need to change directory to the
-directory where your file exists. You do this using [the `cd`) command](http://www.computerhope.com/issues/ch000795.htm).
+directory where your file exists. You do this using [the `cd` command](http://www.computerhope.com/issues/ch000795.htm).
 Then you can run your `.py` file by typing `python example.py`.
 
 You can also execute your file with command line options by simply
