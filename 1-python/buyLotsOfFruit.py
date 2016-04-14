@@ -13,5 +13,5 @@ def buyLotsOfFruit(orderList):
 	
     " YOUR CODE HERE "
 
-orderList = [ ('apples', 2.0), ('pears', 3.0), ('limes', 4.0) ]
+orderList = [ ('apples', 2), ('pears', 3), ('limes', 4) ]
 print('Cost of', orderList, 'is', buyLotsOfFruit(orderList))
