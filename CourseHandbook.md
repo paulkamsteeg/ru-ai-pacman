@@ -14,22 +14,22 @@ the ideas more concrete.
 
 To make the course more fun
 the 'real-world' problems we will be solving are all those faced by a
-small yellow circle (![][images/pacman.png] trying to find enough food to
+small yellow circle (![](images/pacman.png) trying to find enough food to
 survive in a world inhabited by deadly ghosts. Obviously, we can't go
-around killing **![][images/pacman.png]** all the time so we will use a
+around killing **![](images/pacman.png)** all the time so we will use a
 computer simulation of this environment, commonly called **PACMAN :-)** 
-**![][images/pacman.png] (see [en.wikipedia.org/wiki/Pac-Man](http://en.wikipedia.org/wiki/Pac-Man)**Pac-Man**![][images/pacman.png]** faces a number of challenges which the AI
+**![](images/pacman.png) (see [en.wikipedia.org/wiki/Pac-Man](http://en.wikipedia.org/wiki/Pac-Man)**Pac-Man**![](images/pacman.png)** faces a number of challenges which the AI
 techniques taught in Intro2AI A can be used to solve, such as finding
 the best path to the food, optimally avoiding the ghosts to stay alive
 and identify the type of ghost so he can better avoid it. The
 assignments given during this course will lead you through how to help
-**![][images/pacman.png]** survive as long as possible. The course
+**![](images/pacman.png)** survive as long as possible. The course
 cumulates with a '[survival
 horror'](http://en.wikipedia.org/wiki/Survival_horror%E2%80%8E)
 competition where 
-**![][images/pacman.png]** must survive as long as possible, with the
+**![](images/pacman.png)** must survive as long as possible, with the
 team with longest living 
-**![][images/pacman.png]** declared the winner!
+**![](images/pacman.png)** declared the winner!
 
 The teaching
 environment we are using is based on the one used
@@ -110,7 +110,7 @@ your personal computer ensure you are using this version.
 
 ### Week 3: Single agent search (single goal) – get the food 
 
-![][images/pacman.png] is hungry but tired, he
+![](images/pacman.png) is hungry but tired, he
 knows there is food here somewhere (he can smell it). How can he get to
 the food as efficiently as possible?
 
@@ -118,7 +118,7 @@ Here we start with a simple Pacman environment where there are **no
 ghosts** and only a single goal food
 pellet. Your assignment is to implement and compare different search
 methods so
-![][images/pacman.png] can can find the
+![](images/pacman.png) can can find the
 food pellet in the fewest moves possible.
 
 Assignments:
@@ -137,13 +137,13 @@ start = (n,n), i.e. opposite corner.
 
 The PACMAN world is full of corridors. Clearly it is
 stupid for
-![][images/pacman.png] to go part way down a corridor and then turn
+![](images/pacman.png) to go part way down a corridor and then turn
 round (when there are no ghosts). However, the naïve search method used
 above checks if turning around is a reasonable option after every step
 down the corridor. Potentially, a lot of search effort could be saved by
 representing the problem such that a
 single action moves 
-![][images/pacman.png] the whole way down a corridor rather than
+![](images/pacman.png) the whole way down a corridor rather than
 every individual step. (Replacing a single move by a sequence in
 this way is a form of problem abstraction, which is commonly used to
 speed up search – particularly in computer games where the
@@ -154,7 +154,7 @@ Assignment:
 
 Modify the A\* method above to work such that actions move between
 cross-roads in the map (i.e. points where
-![][images/pacman.png] has more than 2
+![](images/pacman.png) has more than 2
 moves available).
 
 Testing:
@@ -165,9 +165,9 @@ expanded by the simple and abstracted version of the problem.
 
 ### Week 4 : Single agent search (multiple goals) – get all the food 
 
-![][images/pacman.png] Is **still** hhungry and tired, but this time there seems
+![](images/pacman.png) Is **still** hhungry and tired, but this time there seems
 to be lots of food! and not a ghost in sight! Your assignment is to modify the simple A\* method from the previous lecture to work when
-![][images/pacman.png] wants to visit
+![](images/pacman.png) wants to visit
 lots of equally rewarding goals as efficiently as possible (i.e. in the
 minimum number of moves).
 
@@ -190,21 +190,21 @@ possible rewards.
 ### Week 5: Multi-agent (Adversarial) search – beat the Ghosts 
 
 Oh No! Now there is a ghost
-![][images/pacman.png] around who for some reason is trying to kill 
-![][images/pacman.png]! 
-![][images/pacman.png] needs some way of
+![](images/pacman.png) around who for some reason is trying to kill 
+![](images/pacman.png)! 
+![](images/pacman.png) needs some way of
 planning to achieve his goals of eating the pellets, whilst avoiding the
 ghosts. As we don't know how clever the 
-![][images/ghost.png] are, for now we will assume they try to act optimally to
+![](images/ghost.png) are, for now we will assume they try to act optimally to
 get 
-![][images/pacman.png].
+![](images/pacman.png).
 
 Assignments:
 
 \(1) Implement a Minimax agent for 
-![][images/pacman.png] so it can cope
+![](images/pacman.png) so it can cope
 with avoiding the 
-![][images/ghost.png].
+![](images/ghost.png).
 
 \(2) Implement alpha-beta pruning for your agent to improve its search
 efficiency.
@@ -213,20 +213,20 @@ efficiency.
 
 Now there are 2, 3, 4 ghosts. Extend
 you solution so 
-![][images/pacman.png] can cope where
+![](images/pacman.png) can cope where
 when there are an arbitrary number of ghosts.
 
 Assignments:
 
 \(1) Adapt the MinimaxAgent to cope with more than 1
-![][images/ghost.png].
+![](images/ghost.png).
 
 \(2) Add alpha-beta pruning to your multi-adversary agent..
 
 
 ### Week 6,7,8 : Survival Competition Assignment 
 
-![][images/pacman.png] now has
+![](images/pacman.png) now has
 all the pieces needed to make a successful PACMAN agent.
 In the final 2 weeks of the course you will put all the pieces together,
 i.e. search and machine learning, to build an effective PACMAN playing
@@ -238,13 +238,13 @@ Note: the competition world has 2 additional features not mentioned so
 far:
 
 1\) Multiple levels: if
-![][images/pacman.png] survives one level (by eating all the pellets) he will move
+![](images/pacman.png) survives one level (by eating all the pellets) he will move
 on to the next level. Later levels will be **harder** due to having
 either larger maps and/or more
-![][images/ghosts.png] .
+![](images/ghosts.png) .
 
 2 CPU limits : the time available for
-![][images/pacman.png] to
+![](images/pacman.png) to
 compute the optimal move will be limited
 
 Assignment:
@@ -261,9 +261,9 @@ take place on the last day of the course. On this day we plan to run the
 competition on the beamer and you can invite your friends to see the
 action. Each groups agent will be run through all the levels
 of increasing difficulty until
-![][images/pacman.png] dies.
+![](images/pacman.png) dies.
 
-![][images/pacman.png] 's total survival time and number of pellets
+![](images/pacman.png) 's total survival time and number of pellets
 eaten in the last level completed are used
 as the group score to decide on the winner.
 
