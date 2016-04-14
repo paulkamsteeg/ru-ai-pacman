@@ -48,22 +48,18 @@ is based on the Python programming language (see **[www.python.org](http://www.p
 Structure
 ---------
 
-The course runs for 7 weeks with two 2hr practical sessions every week
+The course runs for 8 weeks with two 2hr practical sessions every week
 on Tuesdays and Thursdays in the Terminal room SP A.-1.55. The first 5
 weeks consist of assignments where you will work in small groups (2-3
 students) to implement and evaluate one of the basic AI methods to solve
 a 'real-world' problem. Solutions to these assignments must be submitted
-via. Blackboard before the start of the following weeks lecture (Tuesday
-13:45). After the assignments have been graded, you will be given short
+via. Blackboard before the start of the following weeks first lecture. After the assignments have been graded, you will be given short
 feedback on your submission. In addition an **example solution** to the
-assignment will be made available after the assignment deadline, i.e.
-after the start of the following Tuesday lecture.
+assignment will be made available after the assignment deadline.
 
-
-The final 2 weeks are for a final project and competition where you take
+The final 3 weeks are for a final project and competition where you take
 all the knowledge you have learned to solve a more complex problem. The
 groups different solutions are compared in a competition.
-
 
 In contrast to Intro2AI-A all stages of this course are very hands-on
 where you will work at a computer from a template system and problem
@@ -71,19 +67,15 @@ specification and are guided through the process of generating a
 solution in a step-by-step manner. The final assignment stage is less
 guided, but both the instructors and Teaching Assistants will be
 available for to help with any questions you have during the scheduled
-practical sessions, and **by appointment** <span
-style="font-weight: normal">at other times.</span>
+practical sessions, and **by appointment** at other times.
 
 Grading
 -------
 
-As with Intro2AI A 10% (1 mark) is available for simply attending the
-practical sessions or making a reasonable attempt at the assignments.
-The basic assignments themselves are then further graded for quality to
+The assignments are graded for quality to
 contribute 50% (5 marks) to the final grade. For some weeks there are
 also ***Extra Credit*** assignments. Successfully completing
-**two (2)** (or more ;-)) of these extra-credit assignments gives another 10% (1 mark). The final project makes up the remaining 30% (3 marks) of
-the final grade.
+**two (2)** (or more ;-)) of these extra-credit assignments gives another 10%. The final project makes up the remaining 30% of the final grade.
 
 The detailed mark breakdown for each of the assignments is given in the
 detailed assignment description for each week, which will be uploaded to
@@ -91,8 +83,7 @@ Blackboard (Note: below we provide only a sketch of the assignment
 topic). However, generally half (50%) of the assignment marks will be
 given for a **working** solution, and
 half (50%) for the clarity of the code and comments.
-(Thus a badly written, but
-working code can obtain 50% of the available marks, or a clearly written
+(Thus a badly written, but working code can obtain 50% of the available marks, or a clearly written
 but non-working code will also obtain 50% of the available marks).
 
 #### Resits
@@ -102,7 +93,7 @@ assignment, however the maximum score achievable for this resit is 70%
 of the assignment points, i.e. 30\*.7=21%.
 
 Due to the availability of example answers, a different procedure is
-used to resit the attendance and assignments. To resit these course
+used to resit the assignments. To resit these course
 components you must submit an solution to a new assignment which will be
 made available **after** the final
 competition. Note: this assignment will require approximately 1ec of
@@ -113,7 +104,7 @@ it!
 Course Schedule
 ---------------
 
-### Week 1: Python tutorial
+### Week 1,2: Python tutorial
 
 In this practical session we will go through some simple tutorials to
 teach you the minimal subset of Python which you will need to complete
@@ -123,7 +114,7 @@ you may move on to the 1^st^ assignment.)
 N.B. The Python code we are using **only** works with versions 3.X. Thus if working on
 your personal computer ensure you are using this version.
 
-### Week 2: Single agent search (single goal) – get the food 
+### Week 3: Single agent search (single goal) – get the food 
 
 ![pacman](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAMAAAAynjhNAAAACXBIWXMAAAsUAAALFQFLxQsmAAADAFBMVEUAAAAAMf8QQv8x//9jvf9rta1rtbVrvf979zHWnFLelFLe3v/3AAD3vVr3vbX/AAD/nM7/tZT/vf//zjH//wD//zH////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////HywTpAAAAYUlEQVR4nJ3TWQ7AIAhFURbh/tfapFrrAO+K/B5MZDIborQwJ8oUEteEXUf39HdfP4+0eqyva9ZvY5YfU0WddnPjzKCSnBw0FQZtuWxqTxDO86ZlolWkRaYzwN7i6Mw74AfB9DPhWCgW7QAAAABJRU5ErkJggg==){width="18"
 height="18"} is hungry but tired, he
@@ -183,7 +174,7 @@ On predefined mazes of different size where goal always is (1,1) and
 start = (n,n), compare the performance in terms of numbers of nodes
 expanded by the simple and abstracted version of the problem.
 
-### Week 3 : Single agent search (multiple goals) – get all the food 
+### Week 4 : Single agent search (multiple goals) – get all the food 
 
 ![pacman](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAMAAAAynjhNAAAACXBIWXMAAAsUAAALFQFLxQsmAAADAFBMVEUAAAAAMf8QQv8x//9jvf9rta1rtbVrvf979zHWnFLelFLe3v/3AAD3vVr3vbX/AAD/nM7/tZT/vf//zjH//wD//zH////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////HywTpAAAAYUlEQVR4nJ3TWQ7AIAhFURbh/tfapFrrAO+K/B5MZDIborQwJ8oUEteEXUf39HdfP4+0eqyva9ZvY5YfU0WddnPjzKCSnBw0FQZtuWxqTxDO86ZlolWkRaYzwN7i6Mw74AfB9DPhWCgW7QAAAABJRU5ErkJggg==){width="18"
 height="18"} Is **still** hhungry and tired, but this time there seems
@@ -209,7 +200,7 @@ Assignment:
 (1) Modify your multi-goal A\* agent to work when different goals have different
 possible rewards.
 
-### Week 4: Multi-agent (Adversarial) search – beat the Ghosts 
+### Week 5: Multi-agent (Adversarial) search – beat the Ghosts 
 
 Oh No! Now there is a ghost
 ![pacman](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAMAAAAolt3jAAAACXBIWXMAAAsYAAALGAGJqbUQAAADAFBMVEUAAAAAMf8QQv8x//9jvf9rta1rtbVrvf979zHWnFLelFLe3v/3AAD3vVr3vbX/AAD/nM7/tZT/vf//zjH//wD//zH////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////HywTpAAAAP0lEQVR4nI2NSQoAMAgD4wtyy/+fWleK0EMHDA6iAgEdDGy2lZPLPSVWpkrhkT0063zo3eU6/KHI/9Pn6yrwALjwCXtuh7uEAAAAAElFTkSuQmCC){width="21"
