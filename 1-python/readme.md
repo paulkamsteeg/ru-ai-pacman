@@ -189,7 +189,7 @@ There are many built-in methods which allow you to manipulate strings.
 >>> 'AI'.lower()
 'ai'
 >>> len('three')
-4
+5
 ```
 
 Notice that we can use either single quotes `' '` or double
