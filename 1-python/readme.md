@@ -552,7 +552,7 @@ print(oddNumsPlusOne)
 
 **Exercise 5:** Write a new script file in which a list is created containing some strings,
 with at least some letters in uppercase. Then a list comprehension is performed which, from that list, generates
-a lowercased version of each string that has length greater than five.
+a new list containing all the strings that have a length greater than 5, converted to lowercase.
 
 #### Beware of Indentation
 
