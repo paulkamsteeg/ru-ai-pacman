@@ -29,8 +29,8 @@ class FruitShop:
         not in the shop, the function returns None.
         """ 
         
-		" Insert your code for Problem 1 (buyLotsOfFruit.py). "
-		" Change fruitPrices to self.fruitPrices. "
+        " Insert your code for Problem 1 (buyLotsOfFruit.py). "
+        " Change fruitPrices to self.fruitPrices. "
     
     def getName(self):
         return self.name
