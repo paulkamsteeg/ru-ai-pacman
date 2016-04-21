@@ -183,6 +183,9 @@ python run.py -l mediumMaze -p SearchAgent
 python run.py -l bigMaze -z .5 -p SearchAgent
 ```
 
+**NOTE**: You should never need to run `search.py` directly. By running
+`run.py` with the above commands, you can test your code in `search.py`.
+
 The Pacman board will show an overlay of the states explored, and the
 order in which they were explored (brighter red means earlier
 exploration). Is the exploration order what you would have expected?
