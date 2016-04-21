@@ -3,7 +3,7 @@ import shop
 aldiName = 'Aldi'
 aldiPrices = {'apples': 1.00, 'oranges': 1.50, 'pears': 1.75}
 aldiShop = shop.FruitShop(aldiName, aldiPrices)
-aldiApples = berkeleyShop.getCostPerPound('apples')
+aldiApples = aldiShop.getCostPerPound('apples')
 print(aldiApples)
 print('Apples cost €%.2f at %s.' % (aldiApples, aldiName))
 
