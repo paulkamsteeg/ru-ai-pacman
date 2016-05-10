@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     os.chdir(dir_local) # import asssignment files from local directory, overriding central files
 
-    for file in os.listdir():
+    for file in os.listdir('.'):
         if file.endswith('.py') and file != os.path.basename(__file__):
             importlib.import_module(file[:-3])
 
