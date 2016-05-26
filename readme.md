@@ -44,3 +44,7 @@ Practical sessions are in:
 | VIII (22) | May 31-June 2 | Contest preparation                    | Contest preparation                         |
 | IX (23)   | June 7-9      | Contest preparation without assistance | Contest preparation without assistance      |
 | X (24)    | June 14-16    | **Contest (in TvA.4.00.05)**           | Nothing                                     |
+
+#### Sharing
+
+This course has been made possible by modifying the original UCB course [CS122](http://ai.berkeley.edu/project_overview.html) which was generously made available for teaching purposes to any researcher -- on the condition that the answers are not revealed. We modified the original to fit our introductory AI syllabus, and also make it freely available to other teachers -- on the condition that the answers are not revealed.  For teachers who would like our example solutions can contact the course leaders directly for access.    
