@@ -9,7 +9,7 @@ execList=['-p', 'MyPacmanAgent', '-q', '-t', '--frameTime', '0', '-f', '-n', '10
 studentRegexp=r'_([^_]*)_.*'
 logfileName = 'output.txt'
 htmlstyle = 'leaderboard.css'
-htmloutputfile = 'leaderboard.html'
+htmloutputfile = 'leaderboard.md'
 
 def saveobject(filename,obj):
   #print("Saving ",obj)
@@ -53,23 +53,16 @@ def generateHtml(games, name=None):
       avescore = sum(avescore) / float(len(avescore))
    else:
       (scores,timeouts,moves,times,wins,winRate,avescore)=gamesStats(games)
-
+	
+   levels = zip(scores,wins,timeouts,moves,times)
+   
    if name == None: name='Unnamed'
    htmlout = ''
-   htmlout += ''.join('<tr class="alt"><th rowspan="4">%s</th>' % name)
-   htmlout += '<td rowspan="4" class="score">%d</td>' % avescore
-   htmlout += '<th class="alt">Score</th>'
-   htmlout += ' '.join(["<td>%d</td>" % score for score in scores])
-   htmlout += '</tr>\n'
-   htmlout += '<tr><th class="alt">Win/Timeout</th>'
-   htmlout += ' '.join(["<td>%.1f/%.1f</td>" % (wins[i],timeouts[i]) for i in range(len(wins))])
-   htmlout += '<td></td></tr>\n'
-   htmlout += '<tr><th class="alt">Moves</th>'
-   htmlout += ' '.join(["<td>%d</td>" % move for move in moves])
-   htmlout += '</tr>\n'
-   htmlout += '<tr><th class="alt">Move Time</th>'
-   htmlout += ' '.join(["<td>%.3f</td>" % time for time in times])
-   htmlout += '</tr>\n'
+   htmlout += '{} | {}'.format(name,avescore)
+   htmlout += '| Score \n Win/Timeout \n Moves \n Move Time'
+   for score,win,timeout,move,time in levels:
+      htmlout += '| {} \n {.1f}/{.1f} \n {} \n {.3f} '.format(score,win,timeout,move,time)
+   htmlout += '\n'
    return (avescore,htmlout)
 
 def runFile(file,replay=False,args=[]):
@@ -206,13 +199,16 @@ def main(argv):
 
   # sort the results based on score
   info = sorted(info,reverse=True)
-  shutil.copy(htmlstyle,htmloutputfile) # copy in style info
+  # shutil.copy(htmlstyle,htmloutputfile) # copy in style info
+  shutil.copy(htmloutputfile) # copy in style info
   hfile = open(htmloutputfile,'a')
   # write the header
-  hfile.write('<table border="1">')
-  hfile.write("\n<tr><th>Group</th><th>Ave Score</th><th>Info/Level</th>")
-  hfile.write(''.join(["<th>%d</th>" % i for i in range(12)]))
-  hfile.write("\n")
+  hfile.write("Group | Avg Score | Info/Level")
+  hfile.write(''.join(["| %d " % i for i in range(12)]))
+  hfile.write('--- | --- | --- ')
+  for _ in range(12)
+      hfile.write('| --- ')
+  hfile.write('\n')
   for score,output in info:
      hfile.write(output)
   # write the footer
