@@ -61,11 +61,11 @@ def generateHtml(games, name=None):
    htmlout += '{} | {} | Score | '.format(name,avescore)
    htmlout += ' | '.join(['{}'.format(score) for score in scores]) + '\n'
    htmlout += ' | | Win/Timeout | '
-   htmlout += ' | '.join(['{:.1f}/{:1f}'.format(win,timeout) for win,timeout in zip(wins,timeouts)]) + '\n'
+   htmlout += ' | '.join(['{:.1f}/{:.1f}'.format(win,timeout) for win,timeout in zip(wins,timeouts)]) + '\n'
    htmlout += ' | | Moves | '
    htmlout += ' | '.join(['{}'.format(move) for move in moves]) + '\n'
    htmlout += ' | | Move Time | '
-   htmlout += ' | '.join(['{:3.f}'.format(time) for time in times]) + '\n'
+   htmlout += ' | '.join(['{:.3f}'.format(time) for time in times]) + '\n'
    return (avescore,htmlout)
 
 def runFile(file,replay=False,args=[]):
