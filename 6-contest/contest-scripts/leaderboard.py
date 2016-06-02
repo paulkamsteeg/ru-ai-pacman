@@ -58,7 +58,7 @@ def generateHtml(games, name=None):
    
    if name == None: name='Unnamed'
    htmlout = ''
-   htmlout += '{} | {:d} | Score | '.format(name,avescore)
+   htmlout += '{} | {:.0f} | Score | '.format(name,round(avescore))
    htmlout += ' | '.join(['{}'.format(score) for score in scores]) + '\n'
    htmlout += ' | | | Win/Timeout | '
    htmlout += ' | '.join(['{:.1f}/{:.1f}'.format(win,timeout) for win,timeout in zip(wins,timeouts)]) + '\n'
