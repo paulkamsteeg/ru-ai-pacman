@@ -58,13 +58,13 @@ def generateHtml(games, name=None):
    
    if name == None: name='Unnamed'
    htmlout = ''
-   htmlout += '{} | {} | Score | '.format(name,avescore)
+   htmlout += '{} | {:d} | Score | '.format(name,avescore)
    htmlout += ' | '.join(['{}'.format(score) for score in scores]) + '\n'
-   htmlout += ' | | Win/Timeout | '
+   htmlout += ' | | | Win/Timeout | '
    htmlout += ' | '.join(['{:.1f}/{:.1f}'.format(win,timeout) for win,timeout in zip(wins,timeouts)]) + '\n'
-   htmlout += ' | | Moves | '
+   htmlout += ' | | | Moves | '
    htmlout += ' | '.join(['{}'.format(move) for move in moves]) + '\n'
-   htmlout += ' | | Move Time | '
+   htmlout += ' | | | Move Time | '
    htmlout += ' | '.join(['{:.3f}'.format(time) for time in times]) + '\n'
    return (avescore,htmlout)
 
