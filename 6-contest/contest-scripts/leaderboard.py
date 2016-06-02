@@ -58,11 +58,14 @@ def generateHtml(games, name=None):
    
    if name == None: name='Unnamed'
    htmlout = ''
-   htmlout += '{} | {}'.format(name,avescore)
-   htmlout += '| Score \n Win/Timeout \n Moves \n Move Time'
-   for score,win,timeout,move,time in levels:
-      htmlout += '| {} \n {.1f}/{.1f} \n {} \n {.3f} '.format(score,win,timeout,move,time)
-   htmlout += '\n'
+   htmlout += '{} | {} | Score | '.format(name,avescore)
+   htmlout += ' | '.join(['{}'.format(score) for score in scores]) + '\n'
+   htmlout += ' | | Win/Timeout | '
+   htmlout += ' | '.join(['{:.1f}/{:1f}'.format(win,timeout) for zip(wins,timeouts)]) + '\n'
+   htmlout += ' | | Moves | '
+   htmlout += ' | '.join(['{}'.format(move) for move in moves]) + '\n'
+   htmlout += ' | | Move Time | '
+   htmlout += ' | '.join(['{:3.f}'.format(time) for time in times]) + '\n'
    return (avescore,htmlout)
 
 def runFile(file,replay=False,args=[]):
@@ -205,8 +208,7 @@ def main(argv):
 	  hfile.write("Group | Avg Score | Info/Level ")
 	  hfile.write(''.join(["| %d " % i for i in range(12)]))
 	  hfile.write('\n')
-	  hfile.write('--- | --- | --- ')
-	  for _ in range(12):
+	  for _ in range(15):
 		  hfile.write('| --- ')
 	  hfile.write('\n')
 	  for score,output in info:
