@@ -206,7 +206,7 @@ def main(argv):
   hfile.write("Group | Avg Score | Info/Level")
   hfile.write(''.join(["| %d " % i for i in range(12)]))
   hfile.write('--- | --- | --- ')
-  for _ in range(12)
+  for _ in range(12):
       hfile.write('| --- ')
   hfile.write('\n')
   for score,output in info:
