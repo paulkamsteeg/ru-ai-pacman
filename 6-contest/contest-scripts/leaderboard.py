@@ -200,7 +200,6 @@ def main(argv):
   # sort the results based on score
   info = sorted(info,reverse=True)
   # shutil.copy(htmlstyle,htmloutputfile) # copy in style info
-  shutil.copy(htmloutputfile) # copy in style info
   hfile = open(htmloutputfile,'a')
   # write the header
   hfile.write("Group | Avg Score | Info/Level")
