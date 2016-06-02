@@ -202,16 +202,14 @@ def main(argv):
   # shutil.copy(htmlstyle,htmloutputfile) # copy in style info
   hfile = open(htmloutputfile,'a')
   # write the header
-  hfile.write("Group | Avg Score | Info/Level")
+  hfile.write("Group | Avg Score | Info/Level ")
   hfile.write(''.join(["| %d " % i for i in range(12)]))
   hfile.write('--- | --- | --- ')
   for _ in range(12):
       hfile.write('| --- ')
-  hfile.write('\n')
+  hfile.write('\r\n')
   for score,output in info:
      hfile.write(output)
-  # write the footer
-  hfile.write("</table>");
   return info
 
 if __name__ == "__main__":
