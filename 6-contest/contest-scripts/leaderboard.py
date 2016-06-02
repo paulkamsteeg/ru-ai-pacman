@@ -200,16 +200,17 @@ def main(argv):
   # sort the results based on score
   info = sorted(info,reverse=True)
   # shutil.copy(htmlstyle,htmloutputfile) # copy in style info
-  hfile = open(htmloutputfile,'a')
-  # write the header
-  hfile.write("Group | Avg Score | Info/Level ")
-  hfile.write(''.join(["| %d " % i for i in range(12)]))
-  hfile.write('--- | --- | --- ')
-  for _ in range(12):
-      hfile.write('| --- ')
-  hfile.write('\r\n')
-  for score,output in info:
-     hfile.write(output)
+  with open(htmloutputfile,'w') as hfile:
+	  # write the header
+	  hfile.write("Group | Avg Score | Info/Level ")
+	  hfile.write(''.join(["| %d " % i for i in range(12)]))
+	  hfile.write('\n')
+	  hfile.write('--- | --- | --- ')
+	  for _ in range(12):
+		  hfile.write('| --- ')
+	  hfile.write('\n')
+	  for score,output in info:
+		 hfile.write(output)
   return info
 
 if __name__ == "__main__":
