@@ -38,8 +38,21 @@ def gamesStats(games):
    avescore = sum(scores) / float(len(scores))
    return (scores,timeouts,moves,times,wins,winRate,avescore)
 
+with open('userlist') as f:
+   nameLookupDict = {line.split()[0]:line.split()[1].split('@')[0] for line in f.readlines()}
 
-def generateHtml(games, name=None):
+def nameLookup(snum):
+   return nameLookupDict[snum]
+
+def generateHtml(filename,games, name=None):
+   with open(filename) as f:
+      content = f.read()
+   snums = re.findall('s\d{7}',content)
+   if len(snums) == 0:
+      names = [name]
+   else:
+      names = [nameLookup(snum) for snum in snums]
+   namestr = ', '.join(names)
    if type(games[0]) is list :
       scores = []; timeouts=[]; moves=[]; times=[]; wins=[]; winRate=[]; avescore=[];
       for laygames in games: # average the per-layout averages
@@ -56,9 +69,12 @@ def generateHtml(games, name=None):
 	
    levels = zip(scores,wins,timeouts,moves,times)
    
-   if name == None: name='Unnamed'
+   if name == None:
+     name='Unnamed'
+   else:
+     
    htmlout = ''
-   htmlout += '{} | {:.0f} | Score | '.format(name,round(avescore))
+   htmlout += '{} | {:.0f} | Score | '.format(namestr,round(avescore))
    htmlout += ' | '.join(['{}'.format(score) for score in scores]) + '\n'
    htmlout += ' | | Win/Timeout | '
    htmlout += ' | '.join(['{:.1f}/{:.1f}'.format(win,timeout) for win,timeout in zip(wins,timeouts)]) + '\n'
@@ -99,7 +115,7 @@ def runFile(file,replay=False,args=[]):
       games = pacman.cmdlineRunGames(execList + args)
       saveobject(studentNumber + '_games.pk',games) # save so don't have to re-run later
     
-    score,htmlsummary = generateHtml(games,studentNumber)    
+    score,htmlsummary = generateHtml(file,games,studentNumber)    
 
   except subprocess.CalledProcessError as e:
     failed = True
