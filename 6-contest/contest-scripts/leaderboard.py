@@ -45,6 +45,8 @@ def nameLookup(snum):
    return nameLookupDict[snum]
 
 def generateHtml(filename,games, name=None):
+   if name == None:
+     name='Unnamed'     
    with open(filename) as f:
       content = f.read()
    snums = re.findall('s\d{7}',content)
@@ -69,10 +71,6 @@ def generateHtml(filename,games, name=None):
 	
    levels = zip(scores,wins,timeouts,moves,times)
    
-   if name == None:
-     name='Unnamed'
-   else:
-     
    htmlout = ''
    htmlout += '{} | {:.0f} | Score | '.format(namestr,round(avescore))
    htmlout += ' | '.join(['{}'.format(score) for score in scores]) + '\n'
