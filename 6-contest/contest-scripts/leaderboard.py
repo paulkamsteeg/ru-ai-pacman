@@ -118,8 +118,9 @@ def runFile(file,replay=False,args=[]):
   except subprocess.CalledProcessError as e:
     failed = True
     output = e.output
-  except:
+  except Exception as e:
     failed = True
+    output = str(e)
   # Print(result)
   if failed:
     fileoutput += 'Failed :\n' + output + '\n\n'
