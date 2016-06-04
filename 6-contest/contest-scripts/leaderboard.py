@@ -106,7 +106,11 @@ def runFile(file,replay=False,args=[]):
   try:
     print('Trying ' + studentNumber)
     # force reload of student code -- needed even for load to get the class definitions correctly
-    imp.reload(sys.modules[solutionModule]) 
+    try:
+       imp.reload(sys.modules[solutionModule]) 
+    except Exception as e:
+       print(e)
+       return (0,'')
     if os.path.isfile(studentNumber + '_games.pk') and not replay:
       games = loadobject(studentNumber + '_games.pk')
     else:
