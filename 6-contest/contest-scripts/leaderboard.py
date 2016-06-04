@@ -108,9 +108,8 @@ def runFile(file,replay=False,args=[]):
     # force reload of student code -- needed even for load to get the class definitions correctly
     try:
        imp.reload(sys.modules[solutionModule]) 
-    except:
-       import traceback
-       traceback.print_exc()
+    except Exception as e:
+       print(e)
        return (0,'')
     if os.path.isfile(studentNumber + '_games.pk') and not replay:
       games = loadobject(studentNumber + '_games.pk')
