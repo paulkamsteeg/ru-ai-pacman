@@ -121,6 +121,7 @@ def runFile(file,replay=False,args=[]):
   except Exception as e:
     failed = True
     output = str(e)
+    print(e)
   # Print(result)
   if failed:
     fileoutput += 'Failed :\n' + output + '\n\n'
