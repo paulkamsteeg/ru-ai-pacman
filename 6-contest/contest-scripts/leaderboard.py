@@ -118,9 +118,12 @@ def runFile(file,replay=False,args=[]):
   except subprocess.CalledProcessError as e:
     failed = True
     output = e.output
+  except:
+    failed = True
   # Print(result)
   if failed:
     fileoutput += 'Failed :\n' + output + '\n\n'
+    return (0,'')
   else:
     fileoutput += 'Output :\n' + output + '\n\n'
   return (score,htmlsummary)
