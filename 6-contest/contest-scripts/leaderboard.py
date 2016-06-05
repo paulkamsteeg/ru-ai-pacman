@@ -224,16 +224,16 @@ def main(argv):
   help_str = 'If your group is not listed: did you hand in the assignment on Blackboard? Did you hand in just competitionAgents.py and not a zip file? Did you not add any strange import statements? If you think something is wrong, get in contact.\n\nAre not all group member names shown? Be sure to include a comment with all s-numbers in the code.'
 
   with open(htmloutputfile,'w') as hfile:
-	  # write the header
-	  hfile.write(help_str+'\n\n')
-	  hfile.write("Group | Avg Score | Info/Level ")
-	  hfile.write(''.join(["| %d " % i for i in range(12)]))
-	  hfile.write('\n')
-	  for _ in range(15):
-		  hfile.write('| --- ')
-	  hfile.write('\n')
-	  for score,output in info:
-		 hfile.write(output)
+    # write the header
+    hfile.write(help_str+'\n\n')
+    hfile.write("Group | Avg Score | Info/Level ")
+    hfile.write(''.join(["| %d " % i for i in range(12)]))
+    hfile.write('\n')
+    for _ in range(15):
+      hfile.write('| --- ')
+      hfile.write('\n')
+      for score,output in info:
+        hfile.write(output)
   return info
 
 if __name__ == "__main__":
