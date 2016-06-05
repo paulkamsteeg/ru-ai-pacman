@@ -231,9 +231,9 @@ def main(argv):
     hfile.write('\n')
     for _ in range(15):
       hfile.write('| --- ')
-      hfile.write('\n')
-      for score,output in info:
-        hfile.write(output)
+    hfile.write('\n')
+    for score,output in info:
+      hfile.write(output)
   return info
 
 if __name__ == "__main__":
