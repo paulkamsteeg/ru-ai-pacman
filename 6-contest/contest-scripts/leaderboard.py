@@ -51,9 +51,8 @@ def generateHtml(filename,games, name=None):
       content = f.read()
    snums = re.findall('s\d{7}',content)
    if len(snums) == 0:
-      names = [name]
-   else:
-      names = [nameLookup(snum) for snum in snums]
+      snums = [name]
+   names = [nameLookup(snum) for snum in snums]
    namestr = ', '.join(names)
    if type(games[0]) is list :
       scores = []; timeouts=[]; moves=[]; times=[]; wins=[]; winRate=[]; avescore=[];
@@ -222,7 +221,7 @@ def main(argv):
   info = sorted(info,reverse=True)
   # shutil.copy(htmlstyle,htmloutputfile) # copy in style info
 
-  help_str = 'If your group is not listed: did you hand in the assignment on Blackboard? Did you hand in just competitionAgents.py and not a zip file? Did you not add any strange import statements? If you think something is wrong, get in contact.'
+  help_str = 'If your group is not listed: did you hand in the assignment on Blackboard? Did you hand in just competitionAgents.py and not a zip file? Did you not add any strange import statements? If you think something is wrong, get in contact.\n\nAre not all names shown? Be sure to include a comment with all s-numbers in the code.'
 
   with open(htmloutputfile,'w') as hfile:
 	  # write the header
