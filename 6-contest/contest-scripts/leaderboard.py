@@ -221,8 +221,12 @@ def main(argv):
   # sort the results based on score
   info = sorted(info,reverse=True)
   # shutil.copy(htmlstyle,htmloutputfile) # copy in style info
+
+  help_str = 'If your group is not listed: did you hand in the assignment on Blackboard? Did you hand in just competitionAgents.py and not a zip file? Did you not add any strange import statements? If you think something is wrong, get in contact.'
+
   with open(htmloutputfile,'w') as hfile:
 	  # write the header
+	  hfile.write(help_str+'\n\n')
 	  hfile.write("Group | Avg Score | Info/Level ")
 	  hfile.write(''.join(["| %d " % i for i in range(12)]))
 	  hfile.write('\n')
