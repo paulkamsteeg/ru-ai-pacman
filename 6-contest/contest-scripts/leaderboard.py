@@ -110,7 +110,7 @@ def runFile(file,replay=False,args=[]):
     except Exception as e:
        print(e)
        return (0,'')
-    if os.path.isfile(studentNumber + '_games.pk') and not replay:
+    if False and os.path.isfile(studentNumber + '_games.pk') and not replay:
       games = loadobject(studentNumber + '_games.pk')
     else:
       games = pacman.cmdlineRunGames(execList + args)
