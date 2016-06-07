@@ -221,7 +221,7 @@ def main(argv):
   info = sorted(info,reverse=True)
   # shutil.copy(htmlstyle,htmloutputfile) # copy in style info
 
-  help_str = 'If your group is not listed: did you hand in the assignment on Blackboard? Did you hand in just competitionAgents.py and not a zip file? Did you not add any strange import statements? If you think something is wrong, get in contact.\n\nAre not all group member names shown? Be sure to include a comment with all s-numbers in the code.\n\nHighscores previous years\n2015: 2243\n2014: 2195\n\n'
+  help_str = 'If your group is not listed: did you hand in the assignment on Blackboard? Did you hand in just competitionAgents.py and not a zip file? Did you not add any strange import statements? If you think something is wrong, get in contact.\n\nAre not all group member names shown? Be sure to include a comment with all s-numbers in the code.\n\nHighscores previous years\n\n| 2014 | 2015 |\n|---|---|\n| 2195 | 2243 |\n\n'
 
   with open(htmloutputfile,'w') as hfile:
     # write the header
