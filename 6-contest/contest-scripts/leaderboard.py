@@ -114,7 +114,7 @@ def runFile(file,replay=False,args=[]):
       games = loadobject(studentNumber + '_games.pk')
     else:
       games = pacman.cmdlineRunGames(execList + args)
-      saveobject(studentNumber + '_games.pk',games) # save so don't have to re-run later
+      # saveobject(studentNumber + '_games.pk',games) # save so don't have to re-run later
     
     score,htmlsummary = generateHtml(file,games,studentNumber)    
 
