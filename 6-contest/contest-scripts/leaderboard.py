@@ -42,7 +42,10 @@ with open('userlist') as f:
    nameLookupDict = {line.split()[0]:line.split()[1].split('@')[0] for line in f.readlines()}
 
 def nameLookup(snum):
-   return nameLookupDict[snum]
+   if snum in nameLookupDict:
+      return nameLookupDict[snum]
+   else:
+      return snum
 
 def generateHtml(filename,games, name=None):
    if name == None:
