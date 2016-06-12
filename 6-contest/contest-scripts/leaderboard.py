@@ -113,11 +113,11 @@ def runFile(file,replay=False,args=[]):
     except Exception as e:
        print(e)
        return (0,'')
-    if False and os.path.isfile(studentNumber + '_games.pk') and not replay:
-      games = loadobject(studentNumber + '_games.pk')
+    if os.path.isfile('../saved/' + file + '_games.pk') and not replay:
+      games = loadobject('../saved/' + file + '_games.pk')
     else:
       games = pacman.cmdlineRunGames(execList + args)
-      # saveobject(studentNumber + '_games.pk',games) # save so don't have to re-run later
+      saveobject('../saved/' + file + '_games.pk',games) # save so don't have to re-run later
     
     score,htmlsummary = generateHtml(file,games,studentNumber)    
 
@@ -224,7 +224,7 @@ def main(argv):
   info = sorted(info,reverse=True)
   # shutil.copy(htmlstyle,htmloutputfile) # copy in style info
 
-  help_str = 'If your group is not listed: did you hand in the assignment on Blackboard? Did you hand in just competitionAgents.py and not a zip file? Did you not add any strange import statements? If you think something is wrong, get in contact.\n\nPrint statements slow your agent down. Be sure to remove/comment all print statements before submitting your agent.\n\nAre not all group member names shown? Be sure to include a comment with all s-numbers in the code.\n\nNotice your score fluctuating between versions of the leaderboard? This is because the average is not very strong: each level is only run 10 times. For the final leaderboard, each level will be run 50 times, so the average will be more precise.\n\nHighscores previous years\n\n| 2014 | 2015 |\n|---|---|\n| 2195 | 2243 |\n\n'
+  help_str = 'If your group is not listed, be sure to: hand in the assignment on Blackboard; hand in just competitionAgents.py and not a zip file; not add any strange import statements. If you think something is wrong, get in contact.\n\nPrint statements slow your agent down. Be sure to remove/comment all print statements before submitting your agent.\n\nAre not all group member names shown? Be sure to include a comment with all s-numbers in the code.\n\nNotice your score fluctuating between versions of the leaderboard? This is because the average is not very strong: each level is only run 10 times. For the final leaderboard, each level will be run 50 times, so the average will be more precise.\n\nHighscores previous years\n\n| 2014 | 2015 |\n|---|---|\n| 2195 | 2243 |\n\n'
 
   with open(htmloutputfile,'w') as hfile:
     # write the header
