@@ -32,7 +32,7 @@ def gamesStats(games):
    scores = [game.state.getScore() for game in games]
    timeouts = [game.state.getTimeout() for game in games]
    moves  = [game.numMoves for game in games]
-   times  = [games[i].totalAgentTimes[0]/float(moves[i]) for i in range(len(games))]
+   times  = [games[i].totalAgentTimes[0]/float(moves[i]) if float(moves[i]) > 0 else 0 for i in range(len(games))]
    wins = [game.state.isWin() for game in games]
    winRate = wins.count(True)/ float(len(wins))
    avescore = sum(scores) / float(len(scores))
