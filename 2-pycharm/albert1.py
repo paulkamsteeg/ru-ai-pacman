@@ -1,9 +1,11 @@
-import math # a built-in library containing some mathematical operations like square root
+# a built-in library containing some mathematical operations like square root
+import math
 
-'''
-A class to represent an Albert Heijn with a 'name' and 'x', 'y' coordinates
-'''
+
 class AlbertHeijn():
+    '''
+    A class to represent an Albert Heijn with a 'name' and 'x', 'y' coordinates
+    '''
     def __init__(self, name, x, y):
         self.name = name
         self.x = x
@@ -13,10 +15,11 @@ class AlbertHeijn():
     def getPosition(self):
         return (self.x, self.y)
 
-'''
-A class to represent a Terminal Kamer
-'''
+
 class TerminalKamer():
+    '''
+    A class to represent a Terminal Kamer
+    '''
     def __init__(self, x, y):
         self.x = x
         self.y = y
@@ -24,16 +27,18 @@ class TerminalKamer():
     def getPosition(self):
         return (self.x, self.y)
 
-'''
-Returns the distance between points 'xy1' and 'xy2'
-'''
+
 def distance(xy1, xy2):
+    '''
+    Returns the distance between points 'xy1' and 'xy2'
+    '''
     return math.sqrt(pow(xy1[0] - xy2[0], 2) + pow(xy1[1] - xy2[1], 2))
 
-'''
-Returns the distance to the Albert Heijn in 'ahs' that is closest to 'tk'
-'''
+
 def closestAHDistance(tk, ahs):
+    '''
+    Returns the distance to the Albert Heijn in 'ahs' that is closest to 'tk'
+    '''
     tkpos = tk.getPosition()
     ahPositions = [ah.getPosition for ah in ahs]
     ahDistances = [distance(tkpos, ahpos) for ahpos in ahPositions]
