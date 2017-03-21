@@ -25,25 +25,22 @@ requires you to fill in code in some of the framework files. The files that you 
 found in the folders for the topics. To run the code for one of those topics, execute `run.py` in
 the folder for that topic. Topic 6 has all of its code contained in its folder.
 
-#### Schedule April/May/June 2016
+#### Schedule April/May/June 2017
 
-Practical sessions are in:
-
-- Computers: SP.A.-1.55 (A+B)
-- Bring your own laptop: SP.A.-1.59, except April 21: TvA.8.-1.14.
+Practical sessions are in TvA 6.-1.02
 
 | Week      | Dates         | Tuesday 15:45-17:30                    | Thursday 10:45-12:30                        |
 | --------- | ------------- | -------------------------------------- | ------------------------------------------- |
-| I (15)    | April 12-14   | Python                                 | Python                                      |
-| II (16)   | April 19-21   | PyCharm                                | PyCharm (**in SP.A.-1.55 and TvA.8.-1.14**) |
-| III (17)  | April 26-28   | Search                                 | Search                                      |
-| IV (18)   | May 3-5       | *May holidays*                         | *May holidays*                              |
-| V (19)    | May 10-12     | Multisearch (multigoal)                | Multisearch (multigoal)                     |
-| VI (20)   | May 17-19     | Multiagent (adverserial)               | Multiagent (adverserial)                    |
-| VII (21)  | May 24-26     | Contest preparation                    | Contest preparation                         |
-| VIII (22) | May 31-June 2 | Contest preparation                    | Contest preparation                         |
-| IX (23)   | June 7-9      | Contest preparation without assistance | Contest preparation without assistance      |
-| X (24)    | June 14-16    | **Contest (in TvA.4.00.05)**           | Nothing                                     |
+| I (15)    | April 10-12   | Python                                 | Python                                      |
+| *(16,17)* |               | *Easter, May holidays*                 | *Free, May  holidays*                       |
+| II (18)   | May 01-03     | PyCharm and debugging                  | PyCharm and debugging                       |
+| III (19)  | May 08-10     | Search                                 | Search                                      |
+| IV (20)   | May 15-17     | Multigoal search                       | Multigoal search                            |
+| V (21)    | May 22-24     | Multiagent (adverserial)               | Multiagent (adverserial)                    |
+| VI (22)   | May 29-31     | Contest preparation                    | Contest preparation                         |
+| VII (23)  | June 05-07    | Contest preparation                    | Contest preparation                         |
+| VIII (24) | June 12-14    | Contest preparation                    | Contest preparation                         |
+| IX (25)   | June 19-21    | *Hand in contest assignement*          | Contest (in CC4)                            |
 
 #### Sharing
 
