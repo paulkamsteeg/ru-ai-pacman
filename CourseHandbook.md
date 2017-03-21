@@ -161,9 +161,8 @@ called the way-point graph – see e.g. [www.aiwisdom.com/ai\_pathfinding.html](
 Assignment:
 
 Modify the A\* method above to work such that actions move between
-cross-roads in the map (i.e. points where
-![](images/pacman.png) has more than 2
-moves available).
+cross-roads in the map, i.e. points where ![](images/pacman.png) has more than 2
+moves available.
 
 Testing:
 
