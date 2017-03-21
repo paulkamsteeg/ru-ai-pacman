@@ -40,7 +40,7 @@ Practical sessions are in TvA 6.-1.02
 | VI (22)   | May 29-31     | Contest preparation                    | Contest preparation                         |
 | VII (23)  | June 05-07    | Contest preparation                    | Contest preparation                         |
 | VIII (24) | June 12-14    | Contest preparation                    | Contest preparation                         |
-| IX (25)   | June 19-21    | *Hand in contest assignement*          | Contest (in CC4)                            |
+| IX (25)   | June 19-21    | *Hand in contest assignment*           | Contest (in CC4)                            |
 
 #### Sharing
 
