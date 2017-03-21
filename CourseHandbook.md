@@ -1,4 +1,4 @@
-Introduction to AI – Part B (BKI122): Course Handbook =====================================================
+Introduction to AI – Part B (BKI122a): Course Handbook =====================================================
 
 Introduction and Overview
 -------------------------
@@ -14,14 +14,15 @@ the ideas more concrete.
 
 To make the course more fun
 the 'real-world' problems we will be solving are all those faced by a
-small yellow circle (![](images/pacman.png) trying to find enough food to
+small yellow circle (![](images/pacman.png)) trying to find enough food to
 survive in a world inhabited by deadly ghosts. Obviously, we can't go
-around killing **![](images/pacman.png)** all the time so we will use a
+around killing ![](images/pacman.png) all the time so we will use a
 computer simulation of this environment, commonly called **PACMAN :-)** 
-**![](images/pacman.png) (see [en.wikipedia.org/wiki/Pac-Man](http://en.wikipedia.org/wiki/Pac-Man)**Pac-Man**![](images/pacman.png)** faces a number of challenges which the AI
+(see [en.wikipedia.org/wiki/Pac-Man](http://en.wikipedia.org/wiki/Pac-Man)).
+**Pac-Man** ![](images/pacman.png)) faces a number of challenges for which the AI
 techniques taught in Intro2AI A can be used to solve, such as finding
 the best path to the food, optimally avoiding the ghosts to stay alive
-and identify the type of ghost so he can better avoid it. The
+and identifying the type of ghost so it can better avoid it. The
 assignments given during this course will lead you through how to help
 **![](images/pacman.png)** survive as long as possible. The course
 cumulates with a '[survival
@@ -34,10 +35,10 @@ team with longest living
 The teaching
 environment we are using is based on the one used
 at UC Berkeley for there CS188 introductory AI
-courses (see [www-inst.eecs.berkeley.edu/\~cs188/pacman/pacman.html](http://www-inst.eecs.berkeley.edu/~cs188/pacman/pacman.html). We have modified this
+courses (see [ai.berkeley.edu/project_overview.html](http://ai.berkeley.edu/project_overview.html). We have modified this
 environment slightly to fit better with our course, but it remains
 largely similar to the orginal one. **Note: an important aspect of this environment is that it
-is based on the Python programming language (see **[www.python.org](http://www.python.org/)).** However, the amount of Python needed to complete the course is small, so we will teach you a **minimal subset** of Python needed in the first week.
+is based on the Python programming language (see **[www.python.org](http://www.python.org/)).** However, the amount of Python needed to complete the course is small, so we will teach you a **minimal subset** of Python needed in the first weeks.
 
 Structure
 ---------
