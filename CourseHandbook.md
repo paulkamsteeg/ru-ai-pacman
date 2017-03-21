@@ -1,4 +1,4 @@
-Introduction to AI – Part B (BKI122): Course Handbook =====================================================
+Introduction to AI – Part B (BKI122a): Course Handbook =====================================================
 
 Introduction and Overview
 -------------------------
@@ -14,48 +14,58 @@ the ideas more concrete.
 
 To make the course more fun
 the 'real-world' problems we will be solving are all those faced by a
-small yellow circle (![](images/pacman.png) trying to find enough food to
+small yellow circle (![](images/pacman.png)) trying to find enough food to
 survive in a world inhabited by deadly ghosts. Obviously, we can't go
-around killing **![](images/pacman.png)** all the time so we will use a
-computer simulation of this environment, commonly called **PACMAN :-)** 
-**![](images/pacman.png) (see [en.wikipedia.org/wiki/Pac-Man](http://en.wikipedia.org/wiki/Pac-Man)**Pac-Man**![](images/pacman.png)** faces a number of challenges which the AI
+around killing ![](images/pacman.png) all the time so we will use a
+computer simulation of this environment, commonly called **PACMAN** 
+(see [en.wikipedia.org/wiki/Pac-Man](http://en.wikipedia.org/wiki/Pac-Man)).
+**Pac-Man** ![](images/pacman.png) faces a number of challenges for which the AI
 techniques taught in Intro2AI A can be used to solve, such as finding
 the best path to the food, optimally avoiding the ghosts to stay alive
-and identify the type of ghost so he can better avoid it. The
+and identifying the type of ghost so it can better avoid it. The
 assignments given during this course will lead you through how to help
-**![](images/pacman.png)** survive as long as possible. The course
-cumulates with a '[survival
-horror'](http://en.wikipedia.org/wiki/Survival_horror%E2%80%8E)
-competition where 
-**![](images/pacman.png)** must survive as long as possible, with the
-team with longest living 
-**![](images/pacman.png)** declared the winner!
+![](images/pacman.png) survive as long as possible. The course
+cumulates with a '[survival horror'](http://en.wikipedia.org/wiki/Survival_horror%E2%80%8E)
+competition where ![](images/pacman.png) must survive as long as possible, with the
+team with longest living ![](images/pacman.png) declared the winner!
 
-The teaching
-environment we are using is based on the one used
-at UC Berkeley for there CS188 introductory AI
-courses (see [www-inst.eecs.berkeley.edu/\~cs188/pacman/pacman.html](http://www-inst.eecs.berkeley.edu/~cs188/pacman/pacman.html). We have modified this
+The teaching environment we are using is based on the one used
+at UC Berkeley for their CS188 introductory AI
+courses (see [ai.berkeley.edu/project_overview.html](http://ai.berkeley.edu/project_overview.html). We have modified this
 environment slightly to fit better with our course, but it remains
-largely similar to the orginal one. **Note: an important aspect of this environment is that it
-is based on the Python programming language (see **[www.python.org](http://www.python.org/)).** However, the amount of Python needed to complete the course is small, so we will teach you a **minimal subset** of Python needed in the first week.
+largely similar to the orginal one. **Note:** an important aspect of this environment is that it
+is based on the Python programming language (see [www.python.org](http://www.python.org/)). However, the amount of Python needed to complete the course is small, so we will teach you a **minimal subset** of Python needed in the first weeks.
+
+NOTE: The Python code we are using **only** works with versions 3.X, **not** with 2.X. Thus if working on
+your personal computer ensure you are using the correct version.
+
+Course materials
+----------------
+
+All course materials (this handbook, the assignment manuals, the Python files in which to insert your code, etc.) 
+can be found on a GitHub repository located 
+at [github.com/MareinK/ru-ai-pacman-internal](https://github.com/MareinK/ru-ai-pacman-internal).
+You do not need to have a GitHub account to access this repository.
+
+NOTE: the manuals are best read from the GitHub itself, if you download them they will not be rendered optimally.
 
 Structure
 ---------
 
-The course runs for 8 weeks with two 2hr practical sessions every week
-on Tuesdays and Thursdays in the Terminal room SP A.-1.55. The first 5
-weeks consist of assignments where you will work in small groups (2-3
+The course runs for 9 actual weeks (11 calendar weeeks) with two 2hr practical sessions every week
+on Mondays and Wednesdays in the "Scriptiewerkplaats (Thesis workshop)" TvA 6.-1.02. 
+The first 5 weeks (7 weeks including holidays) consist of assignments where you will work in small groups (2
 students) to implement and evaluate one of the basic AI methods to solve
 a 'real-world' problem. Solutions to these assignments must be submitted
-via. Blackboard before the start of the following weeks first lecture. After the assignments have been graded, you will be given short
+via Blackboard before the start of the following weeks first session. After the assignments have been graded, you will be given short
 feedback on your submission. In addition an **example solution** to the
 assignment will be made available after the assignment deadline.
 
-The final 3 weeks are for a final project and competition where you take
+The final 4 weeks are for a final project and competition where you take
 all the knowledge you have learned to solve a more complex problem. The
-groups different solutions are compared in a competition.
+groups' different solutions are compared in a competition.
 
-In contrast to Intro2AI-A all stages of this course are very hands-on
+In contrast to Intro2AI-A, all stages of this course are very hands-on
 where you will work at a computer from a template system and problem
 specification and are guided through the process of generating a
 solution in a step-by-step manner. The final assignment stage is less
@@ -100,13 +110,12 @@ Course Schedule
 
 ### Week 1,2: Python tutorial
 
-In this practical session we will go through some simple tutorials to
+NOTE: this topic actually takes 4 calender weeks, with two holiday weeks in between.
+
+In these practical sessions we will go through some simple tutorials to
 teach you the minimal subset of Python which you will need to complete
 the later assignments. (Note: If you can already program in Python then
 you may move on to the 1^st^ assignment.)
-
-N.B. The Python code we are using **only** works with versions 3.X. Thus if working on
-your personal computer ensure you are using this version.
 
 ### Week 3: Single agent search (single goal) – get the food 
 
@@ -117,8 +126,7 @@ the food as efficiently as possible?
 Here we start with a simple Pacman environment where there are **no
 ghosts** and only a single goal food
 pellet. Your assignment is to implement and compare different search
-methods so
-![](images/pacman.png) can can find the
+methods so ![](images/pacman.png) can can find the
 food pellet in the fewest moves possible.
 
 Assignments:
@@ -153,9 +161,8 @@ called the way-point graph – see e.g. [www.aiwisdom.com/ai\_pathfinding.html](
 Assignment:
 
 Modify the A\* method above to work such that actions move between
-cross-roads in the map (i.e. points where
-![](images/pacman.png) has more than 2
-moves available).
+cross-roads in the map, i.e. points where ![](images/pacman.png) has more than 2
+moves available.
 
 Testing:
 
@@ -224,7 +231,7 @@ Assignments:
 \(2) Add alpha-beta pruning to your multi-adversary agent..
 
 
-### Week 6,7,8 : Survival Competition Assignment 
+### Week 6-8 : Survival Competition Assignment 
 
 ![](images/pacman.png) now has
 all the pieces needed to make a successful PACMAN agent.
