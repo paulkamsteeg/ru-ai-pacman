@@ -76,10 +76,11 @@ practical sessions, and **by appointment** at other times.
 Grading
 -------
 
-The assignments are graded for quality to
-contribute 50% (5 marks) to the final grade. For some weeks there are
-also ***Extra Credit*** assignments. Successfully completing
-**two (2)** (or more ;-)) of these extra-credit assignments gives another 10%. The final project makes up the remaining 30% of the final grade.
+You will get 10% of the grade (1 mark) for a serious participation: having handed in serious arttempts at all assignments. 
+The (bi)weekly assignments are graded for quality to contribute another 60% (6 marks) to the final grade. 
+The final project makes up the remaining 30% of the final grade.
+For some weeks there are also ***Extra Credit*** assignments. Successfully completing **two (2)** (or more ;-)) of 
+these extra-credit assignments gives an extra 10% (max.), up to where your final grade surpassses a 10.
 
 The detailed mark breakdown for each of the assignments is given in the
 detailed assignment description for each week, which will be uploaded to
