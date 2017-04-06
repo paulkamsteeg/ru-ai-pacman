@@ -44,4 +44,4 @@ Practical sessions are in TvA 6.-1.02
 
 #### Sharing
 
-This course has been made possible by modifying the original UCB course [CS122](http://ai.berkeley.edu/project_overview.html) which was generously made available for teaching purposes to any researcher -- on the condition that the answers are not revealed. We modified the original to fit our introductory AI syllabus, and also make it freely available to other teachers -- on the condition that the answers are not revealed.  For teachers who would like our example solutions can contact the course leaders directly for access.    
+This course has been made possible by modifying the original UCB course [CS188](http://ai.berkeley.edu/project_overview.html) which was generously made available for teaching purposes to any researcher -- on the condition that the answers are not revealed. We modified the original to fit our introductory AI syllabus, and also make it freely available to other teachers -- on the condition that the answers are not revealed.  For teachers who would like our example solutions can contact the course leaders directly for access.    
