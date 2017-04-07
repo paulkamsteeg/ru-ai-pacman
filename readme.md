@@ -19,11 +19,7 @@ We recommend viewing the assignment descriptions (the ```readme.md``` files in e
 
 #### The code
 
-The code files for topics 1 and 2 are contained within the folders for those topics. Topics 3
-through 5 use the Pacman framework which can be found in the `scripts` folder. Each of those topics
-requires you to fill in code in some of the framework files. The files that you have to fill in are
-found in the folders for the topics. To run the code for one of those topics, execute `run.py` in
-the folder for that topic. Topic 6 has all of its code contained in its folder.
+The code files for topics 1 and 2 are contained within the folders for those topics. The code files for the other topics will be made available as the course progresses.
 
 #### Schedule April/May/June 2017
 
