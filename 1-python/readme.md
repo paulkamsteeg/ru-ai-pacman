@@ -118,7 +118,7 @@ Your project list on the left should now look something like below.
 ![](images/project-loaded.png)
 
 After opening the project, you will have to check that it is using
-the **correct version of Python**. Go to `Configure -> Preferences -> Project interpreter -> Python interpreters`.
+the **correct version of Python**. Go to `File -> Settings -> Project -> Project interpreter`.
 This will show a window where you can click the `+` at the top right to select a Python version.
 **Be sure to select Python version 3.6.** On the computers in the practical room, this should be listed as `C:\Program Files (x86)\Python36-32\python.exe`.
 
