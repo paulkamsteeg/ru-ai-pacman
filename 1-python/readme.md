@@ -97,8 +97,7 @@ the following (the actual numbers may vary depending on the python
 version installed and operating system you are running on):
 
 ```
-Python 3.4.0 (v3.4.0:04f714765c13, Mar 15 2014, 23:02:41) [GCC 3.4.6] on win64
-Type "help", "copyright", "credits" or "license" for more information.
+Python 3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 17:54:52) [MSC v.1900 32 bit (Intel)] on win32
 >>>
 ```
 
@@ -121,7 +120,7 @@ Your project list on the left should now look something like below.
 After opening the project, you will have to check that it is using
 the **correct version of Python**. Go to `Configure -> Preferences -> Project interpreter -> Python interpreters`.
 This will show a window where you can click the `+` at the top right to select a Python version.
-**Be sure to select a version of Python 3 (such as 3.4 or 3.5).**
+**Be sure to select Python version 3.6.** On the computers in the practical room, this should be listed as `C:\Program Files (x86)\Python36-32\python.exe`.
 
 For information on how to run the `.py` files you've written or edited,
 see the section [Executing Scripts](#executing_scripts).
@@ -131,13 +130,11 @@ At any point, you can open an interactive Python interpreter window with
 Open the interpreter now and check that it displays something like the following.
 
 ```
-Python 3.4.0 (v3.4.0:04f714765c13, Mar 15 2014, 23:02:41) [GCC 3.4.6] on win64
-Type "help", "copyright", "credits" or "license" for more information.
+Python 3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 17:54:52) [MSC v.1900 32 bit (Intel)] on win32
 >>>
 ```
 
-If it says `Python 2` instead of `Python 3` on the first line,
-you have not configured your Python version correctly (see above).
+If it does not say `Python 3.6` on the first line, you have not configured your Python version correctly (see above).
 
 ### Python Basics
 
@@ -258,9 +255,9 @@ find(...) method of builtins.str instance
 ```
 
 Note that another great resource on information about methods
-and datatypes is [the officual Python documentation](https://docs.python.org/3.4/).
+and datatypes is [the official Python documentation](https://docs.python.org/3.6/).
 Often if you use Google to find information about something, you will end up there.
-For example, take a look at [the built-in functions that exist in Python](https://docs.python.org/3.4/library/functions.html).
+For example, take a look at [the built-in functions that exist in Python](https://docs.python.org/3.6/library/functions.html).
 
 **Exercise 2:** Try out some of the string functions listed in `dir` (ignore
 those with underscores around the `__method-name__`, they are internal
