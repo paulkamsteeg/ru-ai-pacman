@@ -45,9 +45,9 @@ Your project list on the left should now look something like below.
 ![](images/project-loaded.png)
 
 After opening the project, you will have to check that it is using
-the **correct version of Python**. Go to `Configure -> Preferences -> Project interpreter -> Python interpreters`.
+the **correct version of Python**. Go to `File -> Settings -> Project -> Project interpreter`.
 This will show a window where you can click the `+` at the top right to select a Python version.
-**Be sure to select a version of Python 3 (such as 3.4 or 3.5).**
+**Be sure to select Python version 3.6.** On the computers in the practical room, this should be listed as `C:\Program Files (x86)\Python36-32\python.exe`.
 
 For information on how to run the `.py` files you've written or edited,
 see the section *Executing Scripts* from the previous topic.
@@ -57,13 +57,11 @@ At any point, you can open an interactive Python interpreter window with
 Open the interpreter now and check that it displays something like the following.
 
 ```
-Python 3.4.0 (v3.4.0:04f714765c13, Mar 15 2014, 23:02:41) [GCC 3.4.6] on win64
-Type "help", "copyright", "credits" or "license" for more information.
+Python 3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 17:54:52) [MSC v.1900 32 bit (Intel)] on win32
 >>>
 ```
 
-If it says `Python 2` instead of `Python 3` on the first line,
-you have not configured your Python version correctly (see above).
+If it does not say `Python 3.6` on the first line, you have not configured your Python version correctly (see above).
 
 ### Classes and Objects in Python
 
