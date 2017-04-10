@@ -6,6 +6,7 @@
   * [Assignment submissions](#assignment-submissions)
 * [Getting started](#getting-started)
   * [Loading the files into PyCharm](#loading-the-files-into-pycharm)
+  * [University computers](#university-computers)
 * [Python Basics](#python-basics)
   * [Operators](#operators)
   * [Strings](#strings)
@@ -136,7 +137,7 @@ Python 3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 17:54:52) [MSC v.1900 32 bit (Intel)]
 
 If it does not say `Python 3.6` on the first line, you have not configured your Python version correctly (see above).
 
-### University computers
+#### University computers
 
 Not all university computers have Pycharm and Python 3.6 installed. If you ever want to work on such a computer, you can download Pycharm Community Edition [here](https://www.jetbrains.com/pycharm/download) and Python 3.6 [here](https://www.python.org/downloads/). You should not need administrator rights to install either of these, though make sure to deselect 'install for all users'.
 
