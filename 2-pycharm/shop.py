@@ -10,7 +10,7 @@ class FruitShop:
         """
         self.fruitPrices = fruitPrices
         self.name = name
-        print('Welcome to %s fruit shop'.format(name))
+        print('Welcome to %s fruit shop' % name)
         
     def getCostPerPound(self, fruit):
         """
