@@ -325,6 +325,10 @@ Implement the missing code in the
 one action is a move between crossroads in the map (i.e. points where
 Pacman has more than 2 legal moves available).
 
+```
+python run.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic,prob=CrossroadSearchProblem
+```
+
 ### Object Glossary
 
 Here's a glossary of the key objects in the code base related to search

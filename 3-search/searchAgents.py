@@ -246,7 +246,7 @@ class AnyFoodSearchProblem(PositionSearchProblem):
         util.raiseNotDefined()
 
 
-class CrossroadSearchAgent(SearchAgent):
+class CrossroadSearchProblem(PositionSearchProblem):
 
     def getSuccessors(self, state):
         """
