@@ -185,6 +185,7 @@ then submit your code via the BlackBoard assignment. An automatic script will
 check for newly submitted agents every couple of minutes, run them, 
 and update the current score-board on the GitHub, 
 so you can see how your agent is doing relative to the rest of the students.
+Note that, because of the long runtime of some agents, your results may take up to a few hours to appear after you upload your agent.
 
 
 ### Designing Agents
