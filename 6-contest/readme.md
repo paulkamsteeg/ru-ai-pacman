@@ -178,13 +178,14 @@ python pacman.py -p MyPacmanAgent
 ### Official Tournaments
 
 The actual competitions will be run using automated scoring, with the
-final tournament deciding the final contest outcome. To submit your
-agent, make sure to properly fill in `competitionAgents.py`and
-then submit your code via the BlackBoard assignment. Twice a
-week (on Mondays and Wednesdays, for code submitted before midnight) we
-will run all submitted agents and update the current score-board on the
-blackboard site, so you can see how your agent is doing relative to
-the rest of the students.
+final tournament deciding the final contest outcome. But before your final agent,
+you can submit a tryout version of your agent any number of times:
+make sure to properly fill in `competitionAgents.py`and
+then submit your code via the BlackBoard assignment. An automatic script will 
+check for newly submitted agents every couple of minutes, run them, 
+and update the current score-board on the GitHub, 
+so you can see how your agent is doing relative to the rest of the students.
+
 
 ### Designing Agents
 
