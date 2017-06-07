@@ -265,19 +265,13 @@ best performing agents, and some selected for
 layouts similar to the ones included in your competition pack (but
 may be revised to manage difficulty to evoke interesting behavior).
 
-**Important dates (subject to change)**
+**Important dates**
 
-| Day of week | Date    | Time       | Event                                            |
-| ----------  | ------- | :--------: | ------------------------------------------------ |
-| Thursday    | June 5  |            | Contest announced and posted                     |
-| Monday      | June 9  | (midnight) | Deadline for Tuesday leaderboard                 |
-| Tuesday     | June 10 |            | Leaderboard updated                              |
-| Wednesday   | June 11 | (midnight) | Deadline for Thursday leaderboard                |
-| Thursday    | June 12 |            | Leaderboard updated                              |
-| Monday      | June 16 | (midnight) | Deadline for Tuesday leaderboard                 |
-| Tuesday     | June 17 |            | Leaderboard updated                              |
-| Wednesday   | June 18 | 09:00      | **Competition Submission Deadline**              |
-| Thursday    | June 19 | 13:45      | Final contest and Awards ceremony in TvA 4.00.37 |
+Monday, May 29: Start working on reflex agent, followed by Contest
+
+From May 29 to June 19: Upload any number of tryouts, see results on leaderboard
+
+Monday, June 19, 12:30 **DEADLINE for uploading final Contest code**
 
 ### Grading
 
