@@ -98,13 +98,12 @@ assignment, however the maximum score achievable for this resit is 70%
 of the assignment points, i.e. 30\*.7=21%.
 
 Due to the availability of example answers, a different procedure is
-used to resit the assignments. To resit these course
-components you must submit an solution to a new assignment which will be
-made available **after** the final
-competition. Note: this assignment will require approximately 1ec of
-effort, i.e. 1weeks work full time, but due to the deadline for the
-Binding Study Advice, you will only have 1 week in which to do
-it!
+used to resit the (bi)weekly assignments. You can resit **one** of these assignents(the lowest grade)
+by submityting a solution to a new assignment which will be made available **after** the final
+competition. 
+Note: this assignment will require approximately 1 ec of
+effort, i.e. 28 hours, but due to the deadline for the
+Binding Study Advice you will only have 1 week in which to do it!
 
 Course Schedule
 ---------------
